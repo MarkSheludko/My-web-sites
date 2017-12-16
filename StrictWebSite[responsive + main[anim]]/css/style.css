@@ -1,0 +1,168 @@
+/*DEFAULT*/
+* {
+    margin: auto;
+    padding: auto;
+}
+body{
+    background-color: white;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 1.4em;
+}
+p{
+    text-align: center;
+}
+
+/*HEADER*/
+
+.logotip{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.image_header{
+    background-image: url("../header/header_background2.jpg");
+    background-size: cover;
+/*    width: 1500px;
+    */
+    width: 100%;
+    height: 795px;
+    background-repeat: no-repeat;
+}
+.strict{
+    margin-top: 150px;
+    text-align: center;
+}
+.poloska{
+    background-color: aquamarine;
+    width: 500px;
+    text-align: center;
+}
+.strictP{
+    font-size: 1.2em;
+    color: #e2e2e3;
+}
+
+/*FIELD1*/
+
+.field1background{
+    background-color: #f6f9f9;
+}
+
+.field1{
+    background-color: #f6f9f9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.txtField1{
+    color: #999999;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/*FIELD2*/
+
+.field2{
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    min-width: 100%; 
+    position: relative;
+}
+.field2 p{
+    color: #999999;
+    font-size: 0.9em;
+}
+
+/*FIELD3*/
+
+.field3{
+    background-color: #f6f9f9;
+    padding-top: 50px;
+    padding-bottom: 85px;
+}
+
+.field3 p{
+    padding-bottom: 50px;
+}
+
+.firstLine{
+    padding-bottom: 15px;
+}
+
+/*FIELD4*/
+
+.field4{
+    background-image: url("../img/field4/background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 675px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.field4p{
+    padding-bottom: 35px;
+}
+
+.field4 h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.inputs{
+    overflow: auto;
+    background-color: transparent;
+    color: white;
+    width: 375px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.bigInput{
+    height: 120px;
+}
+
+.send{
+    overflow: auto;
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 113px;
+    margin-bottom: 5px;
+}
+
+.subcr{
+    color: #d5d6d9;
+}
+
+#subscribeNews{
+    background: grey;
+}
+
+/*FOOTER*/
+
+.footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footerP{
+    color: #999999;
+    padding-top: 13px;
+    float: left;
+}
+
+.smallIcons{
+    float: right;
+}
