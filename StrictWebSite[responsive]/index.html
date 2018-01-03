@@ -10,6 +10,31 @@
 		<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script>
+            function _(id){ return document.getElementById(id); }
+            function submitForm(){
+                _("mybtn").disabled = true;
+                _("status").innerHTML = 'please wait ...';
+                var formdata = new FormData();
+                formdata.append( "n", _("n").value );
+                formdata.append( "e", _("e").value );
+                formdata.append( "m", _("m").value );
+                var ajax = new XMLHttpRequest();
+                ajax.open( "POST", "example_parser.php" );
+                ajax.onreadystatechange = function() {
+                    if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success"){
+                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+                        } else {
+                            _("status").innerHTML = ajax.responseText;
+                            _("mybtn").disabled = false;
+                        }
+                    }
+                }
+                ajax.send( formdata );
+            }
+        </script>
     </head>
     <body>
         
@@ -144,6 +169,13 @@
             <h1>Stay with us</h1>
             
             <p class="txtField1 field4p">We ensure quality & support</p>
+            <form id="my_form" onsubmit="submitForm(); return false;">
+                <p><input class="inputs" id="n" placeholder="Name" required></p>
+                <p><input class="inputs" id="e" placeholder="Email Address" type="email" required></p>
+                <textarea class="inputs" id="m" placeholder="write your message here" rows="10" required></textarea>
+                <p><input class="send" id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+            </form> 
+<!--
             <form>
                 <p><input class="inputs" type="text" placeholder="Full name">
                 <p><input class="inputs" type="email" placeholder="Email Address">
@@ -152,6 +184,7 @@
                 <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
                 <label class="subcr" for="subscribeNews">Subscribe newsletter</label>
                 <input class="send" type="submit" value="Send">
+-->
             
           
             
@@ -177,7 +210,9 @@
                 }, 2000);  
             });
         </script>
+        
         <script type="text/javascript" src="simplebox_util.js"></script>
+        
         <script type="text/javascript">
             (function(){
                 var boxes=[],els,i,l;
