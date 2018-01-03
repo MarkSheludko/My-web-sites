@@ -34,10 +34,6 @@
 		</div>
 	</div>
 </div>
-
-
-
- <img src="https://unsplash.com/photos/9XHjO5THz_U" alt="">
         
 		<div id="headerwrap">
 			<div class="navbar1">
@@ -101,30 +97,48 @@
                 <div class="container-fluid"> 
                     <div class="row firstLine">
                         <div class="col-lg-4">
-                            <img class="images img-responsive" src="img/field3/img5.jpg">
+                            <a rel="simplebox" href="http://www.sqlawoffices.com/wp-content/uploads/2014/01/Archive_Miscellaneous_Old_bicycle_035305_-e1390758349302.jpg">
+                                <img class="images img-responsive" src="img/field3/img5.jpg">
+                            </a>
                         </div>
+                        
                         <div class="col-lg-4">
-                            <img class="images img-responsive" src="img/field3/img3.jpg">
+                            <a rel="simplebox" href="http://hdwallpaperdaily.com/wp-content/uploads/2014/03/city-bike-at-night-wallpaper-1440x900.jpg">
+                                <img class="images img-responsive" src="img/field3/img6.jpg">
+                            </a>
                         </div>
+                        
                         <div class="col-lg-4">
-                            <img class="images img-responsive" src="img/field3/img4.jpg">
+                             <a rel="simplebox" href="http://99px.ru/sstorage/53/2013/12/tmb_89848_7821.jpg">
+                                <img class="images img-responsive" src="img/field3/img3.jpg">
+                            </a>
                         </div>
+                        
                     </div>
                     <div class="row secondLine">
                         <div class="col-lg-4">
-                            <img class="images img-responsive" src="img/field3/img3.jpg">
+                            <a rel="simplebox" href="http://99px.ru/sstorage/53/2013/12/tmb_89848_7821.jpg">
+                                <img class="images img-responsive" src="img/field3/img3.jpg">
+                            </a>
                         </div>
+                        
                         <div class="col-lg-4">
-                            <img class="images img-responsive" src="img/field3/img6.jpg">
+                            <a rel="simplebox" href="http://hdwallpaperdaily.com/wp-content/uploads/2014/03/city-bike-at-night-wallpaper-1440x900.jpg">
+                                <img class="images img-responsive" src="img/field3/img6.jpg">
+                            </a>
                         </div>
+                        
                         <div class="col-lg-4">
-                            <img class="images img-responsive" src="img/field3/img5.jpg">
+                            <a rel="simplebox" href="http://www.sqlawoffices.com/wp-content/uploads/2014/01/Archive_Miscellaneous_Old_bicycle_035305_-e1390758349302.jpg">
+                                <img class="images img-responsive" src="img/field3/img5.jpg">
+                            </a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        
+
           
         <div class="field4">
             <h1>Stay with us</h1>
@@ -162,6 +176,22 @@
                     $(".loader").delay(100).fadeOut().remove();   
                 }, 2000);  
             });
+        </script>
+        <script type="text/javascript" src="simplebox_util.js"></script>
+        <script type="text/javascript">
+            (function(){
+                var boxes=[],els,i,l;
+                if(document.querySelectorAll){
+                els=document.querySelectorAll('a[rel=simplebox]');	
+                Box.getStyles('simplebox_css','simplebox.css');
+                Box.getScripts('simplebox_js','simplebox.js',function(){
+                simplebox.init();
+                for(i=0,l=els.length;i<l;++i)
+                simplebox.start(els[i]);
+                simplebox.start('a[rel=simplebox_group]');			
+                });
+                }
+                })();
         </script>
     </body>
 </html>
