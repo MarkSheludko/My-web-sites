@@ -43,6 +43,8 @@ p{
     color: #e2e2e3;
 }
 
+/*MEDIA FOR HEADER*/
+
 @media screen and (max-width: 500px) {
     #headerwrap{
         height: 600px;
@@ -83,6 +85,13 @@ p{
     }
 }
 
+/*MEDIA FOR LOGO*/
+
+@media screen and (max-width: 1250px){
+    .navbar1{
+        display: none;
+    }
+}
 
 /*FIELD1*/
 
@@ -130,6 +139,11 @@ p{
 
 .firstLine{
     padding-bottom: 15px;
+}
+
+.showcase{
+    font-size: 1.9em;
+    text-align: center;
 }
 
 /*FIELD4*/
@@ -187,6 +201,31 @@ p{
 
 #subscribeNews{
     background: grey;
+}
+
+@media screen and (max-width: 475px){
+    .inputs{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .inputs{
+        width: auto;
+    }
+    .send{
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 175px){
+    .inputs{
+        width: 100px;
+    }
+    .send{
+        
+    }
 }
 
 /*FOOTER*/
