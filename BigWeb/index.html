@@ -10,9 +10,58 @@
 		<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script>
+            function _(id){ return document.getElementById(id); }
+            function submitForm(){
+                _("mybtn").disabled = true;
+                _("status").innerHTML = 'please wait ...';
+                var formdata = new FormData();
+                formdata.append( "n", _("n").value );
+                formdata.append( "e", _("e").value );
+                formdata.append( "t", _("t").value );
+                formdata.append( "m", _("m").value );
+                var ajax = new XMLHttpRequest();
+                ajax.open( "POST", "example_parser.php" );
+                ajax.onreadystatechange = function() {
+                    if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success"){
+                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+                        } else {
+                            _("status").innerHTML = ajax.responseText;
+                            _("mybtn").disabled = false;
+                        }
+                    }
+                }
+                ajax.send( formdata );
+            }
+        </script>
     </head>
     <body>
 <!--   HEADER    -->
+        
+<!--
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+-->
+        
         <header>
             <div class="headerWrap">
                 <div class="container-fluid">
@@ -22,7 +71,7 @@
                         </div>
                         <div class="col-lg-5">
                            <a href="#">HOME</a>
-                           <a href="#">ABOUT</a>
+                           <a href="about.html">ABOUT</a>
                            <a href="#">WORK</a>
                            <a href="#">PROCESS</a>
                            <a href="#">SERVICES</a>
@@ -57,11 +106,11 @@
                     <div class="col-lg-6">
                         <h1><b>Professional Skills</b></h1>
                         <p><b>UI/UX DESIGN  75%</b></p>
-                        <img src="img/skills/line1.png">
+                        <img class="img-responsive" src="img/skills/line1.png">
                         <p><b>WEB DEVELOPMENT  90%</b></p>
-                        <img src="img/skills/line2.png">
+                        <img class="img-responsive" src="img/skills/line2.png">
                         <p><b>MARKETING  65%</b></p>
-                        <img src="img/skills/line3.png">
+                        <img class="img-responsive" src="img/skills/line3.png">
                     </div>
                     <div class="col-lg-6"></div>
                 </div>
@@ -72,17 +121,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <img src="img/points/quality.png">
+                        <img class="img-responsive" src="img/points/quality.png">
                         <h2><b>548</b></h2>
                         <p><b>PROJECTS COMPLETED</b></p>
                     </div>
                     <div class="col-lg-3">
-                        <img src="img/points/speedometer.png">
+                        <img class="img-responsive" src="img/points/speedometer.png">
                         <h2><b>1465</b></h2>
                         <p><b>SPEED WORKING</b></p>
                     </div>
                     <div class="col-lg-3">
-                        <img src="img/points/social-media%20(1).png">
+                        <img class="img-responsive" src="img/points/social-media%20(1).png">
                         <h2><b>612</b></h2>
                         <p><b>POSITIVE FEEDBACKS</b></p>
                     </div>
@@ -94,5 +143,145 @@
                 </div>
             </div>
         </section>
+<!--    SO MANY IMAGES   -->
+<!--
+        <section class="images">
+            <div class="container containeros">
+                <div class="row">
+                        <a rel="simplebox" href="http://www.swinburne.edu.au/media/swinburneeduau/media-centre/images/news-articles/health/Girl-in-winter_LS.jpg">
+                            <img src="img/images/5.jpg">
+                        </a>
+                    
+                        <a rel="simplebox" href="http://www.fubiz.net/wp-content/uploads/2014/04/16-Photo-by-Nadya-Kulagina2.jpg">
+                            <img src="img/images/1.jpg">
+                        </a>
+                    
+                        <a rel="simplebox" href="https://cdnfr1.img.sputniknews.com/images/102884/15/1028841504.jpg">
+                            <img src="img/images/2.jpg">
+                        </a>
+                    
+                        <a rel="simplebox" href="https://assets.entrepreneur.com/article/1413519079_unsplash-1024x682.jpg">
+                            <img src="img/images/3.jpg">
+                        </a>
+                </div>
+                <div class="row">
+                    
+                    <a rel="simplebox" href="https://farm9.staticflickr.com/8443/29133196612_1ee4798edb_b.jpg">
+                        <img src="img/images/4.jpg">
+                    </a>
+                    
+                    <a rel="simplebox" href="https://www.thesun.co.uk/wp-content/uploads/2017/08/nintchdbpict000346501143.jpg?strip=all&w=960">
+                        <img src="img/images/6.jpg">
+                    </a>
+                    
+                    <a rel="simplebox" href="https://static.pexels.com/photos/268819/pexels-photo-268819.jpeg">
+                        <img src="img/images/7.jpg">
+                    </a>
+                    
+                    <a rel="simplebox" href="http://www.fubiz.net/wp-content/uploads/2014/04/16-Photo-by-Nadya-Kulagina2.jpg">
+                        <img src="img/images/1.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+-->
+<!--    Slider    -->
+        <section class="slider1">
+            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+                <div id="slider">
+                <figure>
+                <p alt>TEST</p>
+                <img src="taj-mahal_copy.jpg" alt>
+                <img src="ibiza.jpg" alt>
+                <img src="ankor-wat.jpg" alt>
+                <img src="austin-fireworks.jpg" alt>
+                </figure>
+                </div>
+        </section>
+<!--    SERVICES  -->  
+        <section class="services">
+            <div class="container">
+                <div class="row firstRow">
+                    <div class="col-lg-3">
+                        <img class="servicesImages img-responsive" src="img/services/diamond.png">
+                        <h3><b>UI / UX DESIGN</b></h3>
+                        <p>Be set fourth land god darkness make it wherein own</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="servicesImages  img-responsive" src="img/services/bow.png">
+                        <h3><b>WEB DEVELOPMENT</b></h3>
+                        <p>A she`d them bring void moving third she`d kind fill</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="servicesImages img-responsive" src="img/services/phone.png">
+                        <h3><b>APP / MOBILE</b></h3>
+                        <p>Dominion man second spirit he, earth they`re creeping</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="servicesImages img-responsive" src="img/services/gamepad.png">
+                        <h3><b>GAME DESIGN</b></h3>
+                        <p>Morning his saying moveth it multiply appear life be</p>
+                    </div>
+                </div>
+                
+                <div class="row firstRow">
+                    <div class="col-lg-3">
+                        <img class="servicesImages img-responsive" src="img/services/plane.png">
+                        <h3><b>SEO / MARKETING</b></h3>
+                        <p>Give won`t after land fill creeping meat you, may</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="servicesImages img-responsive" src="img/services/star.png">
+                        <h3><b>PHOTOGRAPHY</b></h3>
+                        <p>Creepeth one seas cattle grass give moving saw give</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="servicesImages img-responsive" src="img/services/magicwand.png">
+                        <h3><b>GRAPHIC DESIGN</b></h3>
+                        <p>Open, great whales air rule for fourth life whales</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="servicesImages img-responsive" src="img/services/water.png">
+                        <h3><b>ILLUSTRATIONS</b></h3>
+                        <p>Whales likeness hath, man kind for them air two won`t</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--    NEED A PROJECT?    -->
+        <section class="projectForm">
+            <div class="container">
+                <h1><b>Need a Project?</b></h1>
+
+                <p class="projectFormTxt">Let us know you`re looking in an agency. We`ll take a look and see if this could be the start of something beautiful.</p>
+                <form id="my_form" onsubmit="submitForm(); return false;">
+                    <p>
+                        <input class="inputs marginRight" id="n" placeholder="Your Name" required>
+                        <input class="inputs" id="e" placeholder="Your Email Address" type="email" required>
+                    </p>
+                    <p><input class="input titleInput" id="e" placeholder="Your Title" required></p>
+                    <textarea class="input messageInput" id="m" placeholder="write your message here" rows="10" required></textarea>
+                    <p><input class="send" id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+                </form> 
+            </div>
+        </section>
+        
+        <script type="text/javascript" src="simplebox_util.js"></script>
+        <script type="text/javascript">
+            (function(){
+                var boxes=[],els,i,l;
+                if(document.querySelectorAll){
+                    els=document.querySelectorAll('a[rel=simplebox]');	
+                Box.getStyles('simplebox_css','simplebox.css');
+                Box.getScripts('simplebox_js','simplebox.js',function(){
+                simplebox.init();
+                    for(i=0,l=els.length;i<l;++i)
+                        simplebox.start(els[i]);
+                        simplebox.start('a[rel=simplebox_group]');			
+                });
+                }
+            })();
+        </script>
     </body>
 </html>
