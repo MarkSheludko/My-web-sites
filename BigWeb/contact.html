@@ -7,14 +7,38 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/bootstrap.css">
 <!--		<link rel="stylesheet" href="css/bootstrap.min.css">-->
-		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">        
 <!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+        <script>
+            function _(id){ return document.getElementById(id); }
+            function submitForm(){
+                _("mybtn").disabled = true;
+                _("status").innerHTML = 'please wait ...';
+                var formdata = new FormData();
+                formdata.append( "n", _("n").value );
+                formdata.append( "e", _("e").value );
+                formdata.append( "t", _("t").value );
+                formdata.append( "m", _("m").value );
+                var ajax = new XMLHttpRequest();
+                ajax.open( "POST", "example_parser.php" );
+                ajax.onreadystatechange = function() {
+                    if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success"){
+                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+                        } else {
+                            _("status").innerHTML = ajax.responseText;
+                            _("mybtn").disabled = false;
+                        }
+                    }
+                }
+                ajax.send( formdata );
+            }
+        </script>
     </head>
     <body>
-<!--
         <div class="loader">
             <div class="loader-inner">
                 <div class="loader-line-wrap">
@@ -34,81 +58,59 @@
                 </div>
             </div>
         </div>
--->  
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <a class="navbar-brand" href="#"><img src="img/header/smallLogo.png"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse marginToRight" id="navbarNavAltMarkup">
+                  <div class="collapse blue navbar-collapse marginToRight" id="navbarNavAltMarkup">
                       <div class="navbar-nav">
                         <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link active" href="#">About</a>
-                        <a class="nav-item nav-link" href="contact.html">Contact</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link active" href="#">Contact</a>
                       </div>
                   </div>
             </nav>
         </header>
-<!--    SECTION1  [AMELIA WOODS]  -->
-        <section id="section1">
-            <div class="container">
-                <h1><b>Amelia Woods</b></h1>
-                <p>I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.</p>
-            </div>
-        </section>
-<!--    SECTION2   [Points]    -->
-        <section id="points">
-            <div class="container">
-                <div class="row marginTopMarginBottom">
-                    <div class="col-lg-3 col-md-2">
-                        <img class="img-responsive" src="img/points/quality.png">
-                        <h2><b>548</b></h2>
-                        <p><b>PROJECTS COMPLETED</b></p>
-                    </div>
-                    <div class="col-lg-3 col-md-2">
-                        <img class="img-responsive" src="img/points/speedometer.png">
-                        <h2><b>1465</b></h2>
-                        <p><b>SPEED WORKING</b></p>
-                    </div>
-                    <div class="col-lg-3 col-md-2">
-                        <img class="img-responsive" src="img/points/social-media%20(1).png">
-                        <h2><b>612</b></h2>
-                        <p><b>POSITIVE FEEDBACKS</b></p>
-                    </div>
-                    <div class="col-lg-3 col-md-2">
-                        <img class="img-responsive" src="img/points/customer.png">
-                        <h2><b>735</b></h2>
-                        <p><b>HAPPY CUSTOMERS</b></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--   SECTION3  [About me]    -->
-        <section id="aboutMe">
+<!--    SECTION1    -->
+        <section id="contactInfo">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <!--  IMAGE  -->
+                    <div class="col-lg-4">
+                        <h1><b>Contact Info:</b></h1>
+                        <p class="tenMargin">To give give beginnind divide, cattle. Give moving won`t, there the abundantly she`d shed brought air upon. Light hath subdue. Life days creature upon first heaver gathering dry.</p>
+                        <p><b>Address:</b> 10111 Santa Monica Boulevard, LA</p>
+                        <p><b>Phone:</b> +44 987 065 908</p>
+                        <p><b>Email:</b> info@example.com</p>
+                        <p><b>Fax:</b> +44 987 065 909</p>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-xs-12">
-                        <h1><b>About me</b></h1>
-                        <p>Given let waters air sea had you`ll, may seed abundantly fish. Were, you`ll earth forth winged above brought. Own darkness they`re him can`t fourth sea place have.</p>
-                        <p>So the above May stars cattle fruitful face shall. Tree it, winged. Every signs male firmament us. Morning him.</p>
-                        <img src="img/about/signature.png">
+                    <div class="col-lg-8">
+                        <form id="my_form" onsubmit="submitForm(); return false;">
+                            <p>
+                                <input class="inputs titleInputs marginRight" id="n" placeholder="Your Name" required>
+                                <input class="inputs titleInputs" id="e" placeholder="Your Email Address" type="email" required>
+                            </p>
+                            <p>
+                                <input class="input titleInput" id="e" placeholder="Your Title" required>
+                            </p>
+                                <input class="w3-input w3-border w3-animate-input noBorders" type="text" style="width:30%" placeholder="Your Comment" required>
+                            <p>
+                                <input class="send" id="mybtn" type="submit" value="Send a comment"> 
+                                <span id="status"></span>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-<!--    SECTION4  [Need a project?]  -->
-        <section id="needAProject">
-            <div class="container marginTopMarginBottom">
-                <h1><b>Need a Project?</b></h1>
-                <p>Let us know you`re looking in an agency. We`ll take a look and see if this could be the start of something beautiful.</p>
-                <button class="sumbit buttonToTalk">LET`S TALK</button>
+<!--       MAP         -->
+        <section id="mapSection">
+            <div class="container">
+                <div id="map"></div>
             </div>
         </section>
-<!--    SECTION5  [Footer]  -->
+<!--    FOOTER    -->
         <footer>
             <div class="container marginTop">
                 <div class="row">
@@ -149,5 +151,21 @@
                 </div>
             </div>
         </footer>
+        <script>
+          function initMap() {
+            var uluru = {lat: 34.062296, lng: -118.4169};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAtHRarFJpL2_5k-EAQ_TZrJIecTH34y3k&callback=initMap">
+    </script>
     </body>
 </html>
