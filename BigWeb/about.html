@@ -37,7 +37,7 @@
 -->  
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#"><img src="img/header/smallLogo.png"></a>
+                  <a class="navbar-brand logo" href="#"><img src="img/header/smallLogo.png"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -46,8 +46,11 @@
                         <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link active" href="about.html">About</a>
                         <a class="nav-item nav-link" href="contact.html">Contact</a>
+                        <a class="nav-item nav-link"href="projects.html">WORKS</a>
+                        <a class="nav-item nav-link" href="#">PROCESS</a>
+                        <a class="nav-item nav-link" href="#">SERVICES</a>
                       </div>
-                  </div>
+                      </div>
             </nav>
         </header>
 <!--    SECTION1  [AMELIA WOODS]  -->
@@ -89,24 +92,50 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <!--  IMAGE  -->
+                        <img class="img-responsive aboutMeImage" src="img/about/image-2.png">
                     </div>
                     <div class="col-lg-6 col-md-12 col-xs-12">
                         <h1><b>About me</b></h1>
                         <p>Given let waters air sea had you`ll, may seed abundantly fish. Were, you`ll earth forth winged above brought. Own darkness they`re him can`t fourth sea place have.</p>
                         <p>So the above May stars cattle fruitful face shall. Tree it, winged. Every signs male firmament us. Morning him.</p>
-                        <img src="img/about/signature.png">
+                        <img class="img-responsive" src="img/about/signature.png">
                     </div>
                 </div>
             </div>
         </section>
 <!--    SECTION4  [Need a project?]  -->
         <section id="needAProject">
-            <div class="container marginTopMarginBottom">
+            <div id="needProject" class="container marginTopMarginBottom center">
                 <h1><b>Need a Project?</b></h1>
                 <p>Let us know you`re looking in an agency. We`ll take a look and see if this could be the start of something beautiful.</p>
-                <button class="sumbit buttonToTalk">LET`S TALK</button>
+                <button id="myButton" class="sumbit buttonToTalk" onclick="functionOpen()">LET`S TALK</button>
             </div>
+            <section id="forms">
+            <div class="container">
+                <h1><b>Let`s talk seriously</b></h1>
+                <form id="my_form" onsubmit="submitForm(); return false;">
+                     <p>
+                        <input class="inputs titleInputs marginRight" id="n" placeholder="Your Name" required>
+                        <input class="inputs titleInputs" id="e" placeholder="Your Email Address" type="email" required>
+                    </p>
+                    <p>
+                        <input class="input titleInput" id="e" placeholder="Your Project`s Name" required>
+                     </p>
+                        <input class="w3-input w3-border w3-animate-input forLastInput noBorders2" type="text" style="width:30%" placeholder="Description" required>
+                     <p class="center bottomMargin">
+                        <input class="send" id="mybtn" type="submit" onclick="functionClose()" value="Send your order"> 
+                        <span id="status"></span>
+                     </p>
+                </form>
+            </div>
+            </section>
+            <section id="success">
+                <div class="container">
+                    <img class="successImg img-responsive" src="img/project/success.png">
+                    <h3><b>Your order will be sent on your email</b></h3>
+                    <p>Our manager will contact with you during 3 day</p>
+                </div>
+            </section>
         </section>
 <!--    SECTION5  [Footer]  -->
         <footer>
@@ -149,5 +178,18 @@
                 </div>
             </div>
         </footer>
+        <script>
+            function functionOpen() {
+                document.getElementById("needProject").style.display = "none";
+                document.getElementById("forms").style.display = "block";
+            }
+            function functionClose(){
+                document.getElementById("forms").style.display = "none";
+                document.getElementById("success").style.display = "block";
+                setTimeout(function(){ 
+                    location.href=location.href; 
+                }, 3000);
+            }
+        </script>
     </body>
 </html>

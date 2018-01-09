@@ -59,7 +59,7 @@
         </div>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#"><img src="img/header/smallLogo.png"></a>
+                  <a class="navbar-brand logo" href="#"><img src="img/header/smallLogo.png"></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -132,7 +132,7 @@
         </section>
 <!--       SECTION2      -->
         <section id="forms">
-            <div class="container">
+            <div class="container" id="toNonDisplay">
                 <h1><b>Need a project?</b></h1>
                 <form id="my_form" onsubmit="submitForm(); return false;">
                      <p>
@@ -144,11 +144,18 @@
                      </p>
                         <input class="w3-input w3-border w3-animate-input forLastInput noBorders2" type="text" style="width:30%" placeholder="Description" required>
                      <p class="center bottomMargin">
-                        <input class="send" id="mybtn" type="submit" value="Send your order"> 
+                        <input class="send" id="mybtn" type="submit" onclick="success()" value="Send your order"> 
                         <span id="status"></span>
                      </p>
                 </form>
             </div>
+            <section id="success">
+                <div class="container">
+                    <img class="successImg img-responsive" src="img/project/success.png">
+                    <h3><b>Your order will be sent on your email</b></h3>
+                    <p>Our manager will contact with you during 3 day</p>
+                </div>
+            </section>
         </section>
 <!--    FOOTER    -->
         <footer>
@@ -194,11 +201,9 @@
         <script>
             var slideIndex = 1;
             showDivs(slideIndex);
-
             function plusDivs(n) {
               showDivs(slideIndex += n);
             }
-
             function showDivs(n) {
               var i;
               var x = document.getElementsByClassName("mySlides");
@@ -208,6 +213,13 @@
                  x[i].style.display = "none";  
               }
               x[slideIndex-1].style.display = "block";  
+            }
+            function success(){
+                document.getElementById("toNonDisplay").style.display = "none";
+                document.getElementById("success").style.display = "block";
+                setTimeout(function(){ 
+                    location.href=location.href; 
+                }, 3000);
             }
 </script>
     </body>
