@@ -276,6 +276,7 @@ header a{
 }
 /*VIDEO SECTION*/
 #video{
+    position: relative;
     width: auto;
     height: auto;
     background-color: white;
