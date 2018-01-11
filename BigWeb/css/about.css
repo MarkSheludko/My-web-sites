@@ -145,10 +145,10 @@ header a:hover{
     border-radius: 4px;
     background-color: #10c9c3;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .buttonToTalk:hover{
     background-color: #0faca7;
@@ -245,10 +245,10 @@ header a:hover{
     background-color: #10c9c3;
     color: white;
     margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
     border: none;
 }
 .bottomMargin{

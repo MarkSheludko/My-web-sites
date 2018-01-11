@@ -100,6 +100,12 @@ header a:hover{
 .leftLink{
     float: left;
 }
+.to-center-from-left{
+    margin-left: 300px;
+}
+.to-center-from-right{
+    margin-right: 350px;
+}
 .toMarginRightSide{
     margin-right: 500px;
 }
@@ -113,6 +119,12 @@ header a:hover{
     margin-right: 20px;
 }
 /*SECTION2[FORMS]*/
+.orderIt{
+    color: #787878;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
 #forms h1{
     text-align: center;
     color: #191919;
@@ -184,14 +196,15 @@ header a:hover{
     padding-bottom: 10px;
 }
 .send{
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
     background-color: #10c9c3;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
     border: none;
 }
 .bottomMargin{
