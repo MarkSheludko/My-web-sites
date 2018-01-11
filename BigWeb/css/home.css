@@ -1,3 +1,6 @@
+.nonDecoration{
+    text-decoration: none;
+}
 /*HEADER*/
 body{
     background-color: #e9e9e9;
@@ -54,6 +57,10 @@ header a{
 /*SECTION1*/
 #section1{
     background-color: #f8f9fa;
+    vertical-align: middle;
+}
+.imgTop{
+    margin-bottom: 60px;
 }
 .secondPart h1{
     margin-top: 100px;
@@ -66,13 +73,15 @@ header a{
     margin-bottom: 25px;
 }
 .secondPart button{
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
     background-color: #10c9c3;
+    text-transform: uppercase;
     color: white;
-    font-size: 1.5em;
-    padding-top: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 10px;
+    font-size: 1.1em;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
     margin-bottom: 50px;
     border: none;
 }
@@ -82,14 +91,15 @@ header a{
 /*SECTION2*/
 #aboutUs h1{
     color: #191919;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 20px;
+    vertical-align: middle;
 }
 #aboutUs p{
     color: #787878;
 }
 #aboutUs img{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     margin-top: 20px;
 }
 /*SKILLS*/
@@ -104,12 +114,17 @@ header a{
     padding-bottom: 25px;
 }
 .skills p{
-    font-size: 1.4em;
+    text-transform: uppercase;
+    font-size: 1.3em;
 }
 .skills img{
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 20px;
+}
+.skillImg{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 @media screen and (max-width: 1600px){
     .skillImg{
@@ -129,10 +144,8 @@ header a{
     float: left;
     margin-right: 25px;
 }
-.points h2{
-    
-}
 .points p{
+    text-transform: uppercase;
     float: left;
 }
 /*SERVICES*/
@@ -149,6 +162,7 @@ header a{
     padding-bottom: 25px;
 }
 .firstRow h3{
+    text-transform: uppercase;
     color: #353535;
     padding-bottom: 10px;
 }
@@ -157,11 +171,12 @@ header a{
     font-size: 1.1em;
 }
 /*IMAGES*/
-#section2{
-}
 #section2 a{
     width: 25%;
     height: 25%;
+}
+#section2 img{
+  display: block;
 }
 #section2 img:hover{
     opacity: 0.6;
@@ -182,17 +197,13 @@ header a{
 }
 /*BUTTON*/
 #buttonMore{
+    text-transform: uppercase;
     width: auto;
     height: 50px;
     text-align: center;
     background-color: #f5f5f5;
-    text-decoration: none;
 }
-#bigButton:hover{
-    text-decoration: none;
-}
-#bigButton p{
-    text-decoration: none;
+.bigButton p{
     padding-top: 15px;
 }
 .buttonBig{
@@ -208,16 +219,16 @@ header a{
 }
 #video h1{
     color: #191919;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 #video p{
     color: #787878;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 #video iframe{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 /*CAROUSEL1*/
 #carousel1{
@@ -225,8 +236,14 @@ header a{
     height: auto;
     background-color: #10c9c3;
 }
+#carousel1 h1{
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
 #carousel1 p{
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 50px;
     color: #ffffff;
     font-size: 1.2em;
@@ -241,33 +258,35 @@ header a{
     background-color: #ffffff;
 }
 .mySlides1 img{
-    margin-left: 38px;
-    margin-right: 38px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .bottomMargin{
     margin-bottom: 25px;
 }
 .topBotMargins{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 /*SECTION1[FORMS]*/
 .projectForm{
     background-color: #f5f5f5;
 }
 #my_form{
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 100px;
+    margin-bottom: 80px;
 }
 .projectForm h1{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 #my_form p{
     margin-bottom: 20px;
 }
 .projectFormTxt{
     text-align: center;
+    color: #787878;
 }
 .projectForm .inputs{
     border: none;
@@ -283,7 +302,6 @@ header a{
     padding-left: 20px;
     padding-bottom: 10px;
     width: 45%;
-    font-size: 1.5em;
 }
 .titleInput{
     border: none;
@@ -317,21 +335,30 @@ header a{
     margin-right: 15px;
 }
 .noBorders{
+    font-size: 1.2em;
     border: none!important;
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
 }
 .send{
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
     background-color: #10c9c3;
     color: white;
-    font-size: 1.3em;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
     border: none;
+}
+.button-submit{
+    margin-right: 100px;
+}
+.send:hover{
+    background-color: #0faca7;
 }
 /*FOOTER*/
 footer{
@@ -374,13 +401,13 @@ footer li{
 .w3-animate-input:focus{width:98%!important}
 /*For carousel2*/
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-center{text-align:center}
-.w3-content{max-width:980px;margin:auto}
+.w3-center{text-align:center;}
+.w3-content{max-width: 980px;margin:auto}
 .w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
 .w3-center .w3-bar-item{text-align:center}
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before
 .w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
-.w3-large{font-size:18px!important}
+.w3-large{font-size:20px!important}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}
 .w3-left-align{text-align:left!important}

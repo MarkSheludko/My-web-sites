@@ -10,7 +10,9 @@
 		<link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">      -->
 <!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
         <script>
@@ -70,8 +72,8 @@
                         <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link" href="about.html">About</a>
                         <a class="nav-item nav-link" href="contact.html">Contact</a>
-                        <a class="nav-item nav-link" href="projects.html">WORKS</a>
-                        <a class="nav-item nav-link" href="process.html">PROCESS</a>
+                        <a class="nav-item nav-link" href="projects.html">Works</a>
+                        <a class="nav-item nav-link" href="process.html">Process</a>
                       </div>
                   </div>
             </nav>
@@ -86,7 +88,7 @@
                     <div class="col-lg-5">
                         <h1><b>We Design and Develop</b></h1>
                         <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or rwo about designing websites and mobile apps.</p>
-                        <a href="contact.html"><button type="submit">CONTACT US</button></a>
+                        <a href="contact.html"><button type="submit">Contact us</button></a>
                     </div>
                 </div>
             </div>
@@ -105,12 +107,29 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <h1><b>Professional Skills</b></h1>
-                        <p><b>UI/UX DESIGN  75%</b></p>
-                        <img class="img-responsive" src="img/skills/line1.png">
-                        <p><b>WEB DEVELOPMENT  90%</b></p>
-                        <img class="img-responsive" src="img/skills/line2.png">
-                        <p><b>MARKETING  65%</b></p>
-                        <img class="img-responsive" src="img/skills/line3.png">
+                        <p><b>Ui/ux design  75%</b></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                          aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            75%
+                            </div>
+                        </div>
+<!--                        <img class="img-responsive" src="img/skills/line1.png">-->
+                        <p><b>Web development  90%</b></p>
+                        <div class="progress">
+                              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                90%
+                              </div>
+                        </div>
+<!--                        <img class="img-responsive" src="img/skills/line2.png">-->
+                        <p><b>Marketing  65%</b></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                          aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                            65%
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <img class="skillImg" src="img/home/18-The-Plateau-image5.jpg">
@@ -125,22 +144,22 @@
                     <div class="col-lg-3">
                         <img class="img-responsive" src="img/points/quality.png">
                         <h2><b>548</b></h2>
-                        <p><b>PROJECTS COMPLETED</b></p>
+                        <p><b>Projects completed</b></p>
                     </div>
                     <div class="col-lg-3">
                         <img class="img-responsive" src="img/points/speedometer.png">
                         <h2><b>1465</b></h2>
-                        <p><b>SPEED WORKING</b></p>
+                        <p><b>Speed working</b></p>
                     </div>
                     <div class="col-lg-3">
                         <img class="img-responsive" src="img/points/social-media%20(1).png">
                         <h2><b>612</b></h2>
-                        <p><b>POSITIVE FEEDBACKS</b></p>
+                        <p><b>Positive feedbacks</b></p>
                     </div>
                     <div class="col-lg-3">
                         <img  class="img-responsive" src="img/points/customer.png">
                         <h2><b>735</b></h2>
-                        <p><b>HAPPY CLIENTS</b></p>
+                        <p><b>Happy clients</b></p>
                     </div>
                 </div>
             </div>
@@ -148,8 +167,8 @@
 <!--    IMAGES   -->
         <section id="section2">
             <div class="container">
-                <div class="row">
-                    <a rel="simplebox" href="https://assets.wired.com/photos/w_300/wp-content/uploads/2018/01/CES2018-Liveblog-500x500-e1515387414411.jpg">
+                <div class="row forRelative">
+                    <a class="forRelative" rel="simplebox" href="https://assets.wired.com/photos/w_300/wp-content/uploads/2018/01/CES2018-Liveblog-500x500-e1515387414411.jpg">
                         <img src="img/process/CES2018-Liveblog-500x500-e1515387414411.jpg">
                     </a>
                     
@@ -182,10 +201,11 @@
                         <img src="img/process/yosemite.png">
                     </a>
                 </div>
+                
             </div>
         </section>
         <section id="section3">
-            <div class="container">
+            <div class="container forRelative">
                 <div class="row">
                     <a rel="simplebox" href="https://assets.wired.com/photos/w_300/wp-content/uploads/2018/01/CES2018-Liveblog-500x500-e1515387414411.jpg">
                         <img src="img/process/CES2018-Liveblog-500x500-e1515387414411.jpg">
@@ -224,7 +244,7 @@
         </section>
 <!--    BUTTON    -->
         <section id="buttonMore">
-            <a id="buttonLoadMore" class="buttonBig" href="#" onclick="toIncrease()"><section id="bigButton"><p>LOAD MORE WORKS</p></section>
+            <a style="text-decoration: none;" id="buttonLoadMore" class="buttonBig" href="#" onclick="toIncrease()"><section class="bigButton"><p>Load more works</p></section>
             </a>
         </section>
 <!--    VIDEO SECTION   -->
@@ -242,44 +262,44 @@
                 <div class="row firstRow">
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/diamond.png">
-                        <h3><b>UI / UX DESIGN</b></h3>
+                        <h3><b>Ui / ux design</b></h3>
                         <p>Be set fourth land god darkness make it wherein own</p>
                     </div>
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/bow.png">
-                        <h3><b>WEB DEVELOPMENT</b></h3>
+                        <h3><b>WEb development</b></h3>
                         <p>A she`d them bring void moving third she`d kind fill</p>
                     </div>
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/phone.png">
-                        <h3><b>APP / MOBILE</b></h3>
+                        <h3><b>App / Mobile</b></h3>
                         <p>Dominion man second spirit he, earth they`re creeping</p>
                     </div>
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/gamepad.png">
-                        <h3><b>GAME DESIGN</b></h3>
+                        <h3><b>Game design</b></h3>
                         <p>Morning his saying moveth it multiply appear life be</p>
                     </div>
                 </div>
                 <div class="row firstRow">
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/plane.png">
-                        <h3><b>SEO / MARKETING</b></h3>
+                        <h3><b>Seo / Marketing</b></h3>
                         <p>Give won`t after land fill creeping meat you, may</p>
                     </div>
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/star.png">
-                        <h3><b>PHOTOGRAPHY</b></h3>
+                        <h3><b>Photography</b></h3>
                         <p>Creepeth one seas cattle grass give moving saw give</p>
                     </div>
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/magicwand.png">
-                        <h3><b>GRAPHIC DESIGN</b></h3>
+                        <h3><b>Graphic design</b></h3>
                         <p>Open, great whales air rule for fourth life whales</p>
                     </div>
                     <div class="col-lg-3">
                         <img class="servicesImages" src="img/services/water.png">
-                        <h3><b>ILLUSTRATIONS</b></h3>
+                        <h3><b>Illustrations</b></h3>
                         <p>Whales likeness hath, man kind for them air two won`t</p>
                     </div>
                 </div>
@@ -288,7 +308,8 @@
 <!--    CAROUSEL1 SECTION    -->
         <section id="carousel1">
             <div class="container">
-                <div class="w3-content w3-display-container" style="max-width:800px">
+                <div class="w3-content w3-display-container" style="max-width:1100px">
+                    <h1>Several feedbacks</h1>
                   <span class="mySlides" style="width:100%">
                     <p>"Outstanding job and exceeded all expectations. It was a pleasure to work with them on sizable first project and am looking forward to start the next one asap."</p>
                   </span>
@@ -313,7 +334,7 @@
 <!--    CAROUSEL2 SECTION    -->
         <section id="carousel2">
             <div class="container">
-                <div class="topBotMargins w3-content w3-section">
+                <div class="topBotMargins w3-content w3-section" style="max-width:1100px">
                     <span class="mySlides1">
                       <img src="img/carousel2/logo1.png" >
                       <img src="img/carousel2/logo2.png">
@@ -350,8 +371,8 @@
                         <input class="inputs" id="e" placeholder="Your Email Address" type="email" required>
                     </p>
                     <p><input class="input titleInput" id="e" placeholder="Your Title" required></p>
-                    <input class="w3-input w3-border w3-animate-input noBorders" type="text" style="width:48%" placeholder="Your Comment" required>
-                    <p class="center"><input class="send" id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+                    <textarea class="w3-input w3-border w3-animate-input noBorders" type="message" placeholder="Your Message" style="width:48%;" required></textarea>
+                    <p class="center button-submit"><input class="send" id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
                 </form> 
             </div>
         </section>
