@@ -36,22 +36,63 @@ header a{
     color: #91d8d5;
 }
 .marginToRight{
-    margin-left: 1200px;
+/*    margin-left: 1200px;*/
+        margin-left: 64%;
     float: right;
 }
-@media screen and (max-width: 1871px){
+@media screen and (max-width: 1840px){
     .marginToRight{
-        margin-left: 1400px;
+        margin-left: 60%;
     }
 }
-@media screen and (max-width: 1775px){
+@media screen and (max-width: 1725px){
     .marginToRight{
-        margin-left: 1300px;
-    }-
+        margin-left: 55%;
+    }
 }
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1500px){
     .marginToRight{
-        margin-left: 1200px;
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width: 1345px){
+    .marginToRight{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 1230px){
+    .marginToRight{
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 1120px){
+    .marginToRight{
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 1040px){
+    .marginToRight{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 991px){
+    .marginToRight{
+        margin-left: 80%;
+    }
+}
+@media screen and (max-width: 850px){
+    .marginToRight{
+        margin-left: 70%;
+    }
+}
+@media screen and (max-width: 775px){
+    .marginToRight{
+        margin-left: 65%;
+    }
+}
+@media screen and (max-width: 767px){
+    .marginToRight{
+        margin-left: 0%;
     }
 }
 /*SECTION1*/
@@ -167,6 +208,15 @@ header a{
     padding-top: 140px;
     padding-bottom: 25px;
 }
+@media screen and (max-width: 1600px){
+    .skills img{
+        display: none;
+    }
+    .skills h1{
+        text-align: center;
+        padding-top: 0px;
+    }
+}
 .skills p{
     text-transform: uppercase;
     font-size: 1.3em;
@@ -197,6 +247,30 @@ header a{
     height: 60%;
     float: left;
     margin-right: 25px;
+}
+@media screen and (max-width: 991px){
+    .points img{
+        width: 10%;
+        height: 70%;
+    }
+}
+@media screen and (max-width: 767px){
+    .points img{
+        width: 15%;
+        height: 75%;
+    }
+}
+@media screen and (max-width: 525px){
+    .points img{
+        width: 15%;
+        height: 65%;
+    }
+}
+@media screen and (max-width: 400px){
+    .points img{
+        width: 15%;
+        height: 55%;
+    }
 }
 .points p{
     text-transform: uppercase;
@@ -229,11 +303,11 @@ header a{
     margin-top: 80px;
 }
 #section2 a{
-    width: 25%;
-    height: 25%;
+    width: 24%;
 }
 #section2 img{
   display: block;
+  width: 100%;
 }
 #section2 img:hover{
     opacity: 0.6;
@@ -249,19 +323,15 @@ header a{
 .toSmall:hover {
     height: 400px;
 }
-#section3{
-/*    display: none;*/
-/*    height: 1px;*/
+#section3 img{
+  display: block;
+  width: 100%;
 }
 #section3 a{
-    width: 25%;
-    height: 25%;
+    width: 24%;
 }
 #section3 img:hover{
     opacity: 0.6;
-}
-#section3{
-    text-align: center;
 }
 /*BUTTON*/
 .buttonBig{
@@ -322,6 +392,21 @@ header a{
     height: auto;
     background-color: #ffffff;
 }
+@media screen and (max-width: 1225px){
+    .toNonDisplay img{
+        width: 8%;
+    }
+}
+@media screen and (max-width: 995px){
+    .toNonDisplay img{
+        width: 5%;
+    }
+}
+@media screen and (max-width: 775px){
+    .toNonDisplay{
+        display: none;
+    }
+}
 .mySlides1 img{
     margin-left: 50px;
     margin-right: 50px;
@@ -375,12 +460,74 @@ header a{
     padding-bottom: 10px;
     width: 98%;
 }
+.titleInput2{
+    border: none;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    width: 70%;
+}
 .titleInputs{
     border: none;
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
     width: 48%;
+}
+.titleInputs2{
+    border: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+@media screen and (max-width: 665px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 535px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .titleInputs2{
+        width: 100%;
+    }
+    .titleInput2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .titleInputs2{
+        width: 150%;
+    }
+    .titleInput2{
+        width: 150%;
+    }
+}
+@media screen and (max-width: 335px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .titleInputs2{
+        width: 175%;
+    }
+    .titleInput2{
+        width: 175%;
+    }
 }
 .messageInput{
     border: none;
@@ -412,6 +559,19 @@ header a{
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
+}
+@media screen and (max-width: 767px){
+    .projectForm .inputs{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .titleInput{
+         width: 70%;
+         margin-top: 0px;
+    }
+    .noBorders2{
+        width: 70%;
+    }
 }
 .send{
     font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
