@@ -11,31 +11,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script>
-            function _(id){ return document.getElementById(id); }
-            function submitForm(){
-                _("mybtn").disabled = true;
-                _("status").innerHTML = 'please wait ...';
-                var formdata = new FormData();
-                formdata.append( "n", _("n").value );
-                formdata.append( "e", _("e").value );
-                formdata.append( "t", _("t").value );
-                formdata.append( "m", _("m").value );
-                var ajax = new XMLHttpRequest();
-                ajax.open( "POST", "example_parser.php" );
-                ajax.onreadystatechange = function() {
-                    if(ajax.readyState == 4 && ajax.status == 200) {
-                        if(ajax.responseText == "success"){
-                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
-                        } else {
-                            _("status").innerHTML = ajax.responseText;
-                            _("mybtn").disabled = false;
-                        }
-                    }
-                }
-                ajax.send( formdata );
-            }
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     </head>
     <body>
         <div class="loader">
@@ -65,10 +42,10 @@
                   </button>
                   <div class="collapse blue navbar-collapse marginToRight" id="navbarNavAltMarkup">
                       <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="index.html">Home</a>
                         <a class="nav-item nav-link" href="about.html">About</a>
                         <a class="nav-item nav-link" href="contact.html">Contact</a>
-                        <a class="nav-item nav-link active"href="projects.html">WORKS</a>
+                        <a class="nav-item nav-link active"href="projects.html">WORKS<span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link" href="process.html">PROCESS</a>
                       </div>
                   </div>
@@ -186,6 +163,56 @@
                 </div>
             </div>
         </footer>
+          <script>
+            function _(id){ return document.getElementById(id); }
+            function submitForm(){
+                _("mybtn").disabled = true;
+                _("status").innerHTML = 'please wait ...';
+                var formdata = new FormData();
+                formdata.append( "n", _("n").value );
+                formdata.append( "e", _("e").value );
+                formdata.append( "t", _("t").value );
+                formdata.append( "m", _("m").value );
+                var ajax = new XMLHttpRequest();
+                ajax.open( "POST", "example_parser.php" );
+                ajax.onreadystatechange = function() {
+                    if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success"){
+                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+                        } else {
+                            _("status").innerHTML = ajax.responseText;
+                            _("mybtn").disabled = false;
+                        }
+                    }
+                }
+                ajax.send( formdata );
+            }
+        </script>
+           <script>
+            function _(id){ return document.getElementById(id); }
+            function submitForm(){
+                _("mybtn").disabled = true;
+                _("status").innerHTML = 'please wait ...';
+                var formdata = new FormData();
+                formdata.append( "n", _("n").value );
+                formdata.append( "e", _("e").value );
+                formdata.append( "t", _("t").value );
+                formdata.append( "m", _("m").value );
+                var ajax = new XMLHttpRequest();
+                ajax.open( "POST", "example_parser.php" );
+                ajax.onreadystatechange = function() {
+                    if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success"){
+                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+                        } else {
+                            _("status").innerHTML = ajax.responseText;
+                            _("mybtn").disabled = false;
+                        }
+                    }
+                }
+                ajax.send( formdata );
+            }
+        </script>
         <script>
             var slideIndex = 1;
             showDivs(slideIndex);
