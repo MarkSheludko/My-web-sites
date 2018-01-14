@@ -29,23 +29,8 @@ header a{
     color: #91d8d5;
 }
 .marginToRight{
-    margin-left: 1200px;
+    margin-left: 64%;
     float: right;
-}
-@media screen and (max-width: 1871px){
-    .marginToRight{
-        margin-left: 1400px;
-    }
-}
-@media screen and (max-width: 1775px){
-    .marginToRight{
-        margin-left: 1300px;
-    }-
-}
-@media screen and (max-width: 1700px){
-    .marginToRight{
-        margin-left: 1200px;
-    }
 }
 /*SECTION1*/
 #contactInfo{
@@ -187,6 +172,92 @@ footer ul{
 footer li{
     text-decoration: none;
     list-style-type: none;
+}
+.third-column-footer{
+    margin-left: 275px;
+}
+/*NAVBAR_MEDIA*/
+@media screen and (max-width: 1840px){
+    .marginToRight{
+        margin-left: 60%;
+    }
+}
+@media screen and (max-width: 1725px){
+    .marginToRight{
+        margin-left: 55%;
+    }
+}
+@media screen and (max-width: 1500px){
+    .marginToRight{
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width: 1345px){
+    .marginToRight{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 1230px){
+    .marginToRight{
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 1120px){
+    .marginToRight{
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 1040px){
+    .marginToRight{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 991px){
+    .marginToRight{
+        margin-left: 80%;
+    }
+}
+@media screen and (max-width: 850px){
+    .marginToRight{
+        margin-left: 70%;
+    }
+}
+@media screen and (max-width: 775px){
+    .marginToRight{
+        margin-left: 65%;
+    }
+}
+@media screen and (max-width: 767px){
+    .marginToRight{
+        margin-left: 0%;
+    }
+}
+/*FORM_MEDIA*/
+@media screen and (max-width: 991px){
+    #my_form{
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .titleInputs{
+        width: 47.7%;
+    }
+}
+@media screen and (max-width: 445px){
+    .titleInputs{
+        margin-bottom: 20px;
+        width: 98%;
+    }
+}
+/*FOOTER_MEDIA*/
+@media screen and (max-width: 1205px){
+    .third-column-footer{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 992px){
+    .third-column-footer{
+        margin-left: 0px;
+    }
 }
 /*For comment input*/
 .w3-animate-input{transition:width 0.4s ease-in-out}

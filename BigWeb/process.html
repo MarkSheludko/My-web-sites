@@ -84,7 +84,46 @@
         </section>
 <!--    IMAGES   -->
         <section id="section2">
-            <div class="container">
+            <div class="container toMarginTop">
+                <div class="row forRelative">
+                    <a class="forRelative" rel="simplebox" href="https://assets.wired.com/photos/w_300/wp-content/uploads/2018/01/CES2018-Liveblog-500x500-e1515387414411.jpg">
+                        <img src="img/process/CES2018-Liveblog-500x500-e1515387414411.jpg">
+                    </a>
+                    
+                    <a rel="simplebox" href="https://www.power911.ru/media/k2/items/cache/fe8bfc1b99c9ede76699e9aaec65452f_S.jpg">
+                        <img src="img/process/fe8bfc1b99c9ede76699e9aaec65452f_S.jpg">
+                    </a>
+                    
+                    <a rel="simplebox" href="http://erarta.co.uk/wp-content/uploads/2016/02/image-159-300x300.jpeg">
+                        <img src="img/process/image-159-300x300.jpeg">
+                    </a>
+                    
+                    <a rel="simplebox" href="https://assets.wired.com/photos/w_300/wp-content/uploads/2017/04/Climate-Drone_Navmar-Applied-Sciences-CorporationHP-500x500-e1493401485929.jpg">
+                        <img src="img/process/images.jpg">
+                    </a>
+                </div>
+                <div class="row">
+                    <a rel="simplebox" href="http://en.es-static.us/upl/2018/01/jupiter-moons-mars-1-6-2018-Bronx-NY-Chirag-Upreti-sq-300x300.jpg">
+                        <img src="img/process/jupiter-moons-mars-1-6-2018-Bronx-NY-Chirag-Upreti-sq-300x300.jpg">
+                    </a>
+                    
+                    <a rel="simplebox" href="https://www.w3schools.com/howto/pineapple.jpg">
+                        <img src="img/process/pineapple.jpg">
+                    </a>
+                    
+                    <a rel="simplebox" href="https://demos.algorithmia.com/colorize-photos/public/images/water.png">
+                        <img src="img/process/water.png">
+                    </a>
+                    
+                    <a rel="simplebox" href="https://demos.algorithmia.com/colorize-photos/public/images/yosemite.png">
+                        <img src="img/process/yosemite.png">
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+        <section id="section3">
+            <div id="toSmall" class="container toSmall toMarginBottom">
                 <div class="row">
                     <a rel="simplebox" href="https://assets.wired.com/photos/w_300/wp-content/uploads/2018/01/CES2018-Liveblog-500x500-e1515387414411.jpg">
                         <img src="img/process/CES2018-Liveblog-500x500-e1515387414411.jpg">
@@ -125,16 +164,16 @@
         <footer>
             <div class="container marginTop">
                 <div class="row">
-                    <div class="col-lg-5 col-md-4">
+                    <div class="col-lg-3 col-md-2 col-sm-3 col-12 first-column-footer">
                         <h6>Piroll Design, Inc.</h6>
                         <p>© 2018 Piroll. All rights reserved.</p>
                         <p>Designed by marekhwy.</p>
                     </div>
-                    <div class="col-lg-3 col-md-3">
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12 second-column-footer">
                         <p>hello@pirolltheme.com</p>
                         <p>+44 987 065 908</p>
                     </div>
-                    <div class="col-lg-1 col-md-2">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-3 third-column-footer">
                         <ul>
                             <li><a href="#">Project</a></li>
                             <li><a href="#">About</a></li>
@@ -142,16 +181,7 @@
                             <li><a href="#">Carreer</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-1 col-md-2">
-                        <ul>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Legals</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-1 col-md-0"></div>
-                    <div class="col-lg-1 col-md-2">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-3 four-column-footer">
                         <ul>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Twitter</a></li>
@@ -159,9 +189,26 @@
                             <li><a href="#">Dribbble</a></li>
                         </ul>
                     </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-3 five-column-footer">
+                        <ul>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Legals</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
+<!--    OPENER FOR PORTFOLIO    -->     
+        <script>
+        $(document).ready(function(){
+            $("#btt-for-jquery").click(function(){
+                $("#toSmall").toggleClass("opened");
+                $(this).addClass("unvisible");
+            });
+        });
+        </script>
         <script>
           function initMap() {
             var uluru = {lat: 34.062296, lng: -118.4169};

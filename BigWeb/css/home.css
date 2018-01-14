@@ -36,64 +36,8 @@ header a{
     color: #91d8d5;
 }
 .marginToRight{
-/*    margin-left: 1200px;*/
-        margin-left: 64%;
+    margin-left: 64%;
     float: right;
-}
-@media screen and (max-width: 1840px){
-    .marginToRight{
-        margin-left: 60%;
-    }
-}
-@media screen and (max-width: 1725px){
-    .marginToRight{
-        margin-left: 55%;
-    }
-}
-@media screen and (max-width: 1500px){
-    .marginToRight{
-        margin-left: 50%;
-    }
-}
-@media screen and (max-width: 1345px){
-    .marginToRight{
-        margin-left: 45%;
-    }
-}
-@media screen and (max-width: 1230px){
-    .marginToRight{
-        margin-left: 40%;
-    }
-}
-@media screen and (max-width: 1120px){
-    .marginToRight{
-        margin-left: 35%;
-    }
-}
-@media screen and (max-width: 1040px){
-    .marginToRight{
-        margin-left: 30%;
-    }
-}
-@media screen and (max-width: 991px){
-    .marginToRight{
-        margin-left: 80%;
-    }
-}
-@media screen and (max-width: 850px){
-    .marginToRight{
-        margin-left: 70%;
-    }
-}
-@media screen and (max-width: 775px){
-    .marginToRight{
-        margin-left: 65%;
-    }
-}
-@media screen and (max-width: 767px){
-    .marginToRight{
-        margin-left: 0%;
-    }
 }
 /*SECTION1*/
 #section1{
@@ -145,12 +89,6 @@ header a{
 }
 
 /* Modal Content */
-.img-in-modal-window{
-    width: 5%;
-    height: 5%;
-    text-align: center;
-    margin-left: 700px;
-}
 .modal-content h2{
     text-align: center;
     color: #191919;
@@ -248,30 +186,6 @@ header a{
     float: left;
     margin-right: 25px;
 }
-@media screen and (max-width: 991px){
-    .points img{
-        width: 10%;
-        height: 70%;
-    }
-}
-@media screen and (max-width: 767px){
-    .points img{
-        width: 15%;
-        height: 75%;
-    }
-}
-@media screen and (max-width: 525px){
-    .points img{
-        width: 15%;
-        height: 65%;
-    }
-}
-@media screen and (max-width: 400px){
-    .points img{
-        width: 15%;
-        height: 55%;
-    }
-}
 .points p{
     text-transform: uppercase;
     float: left;
@@ -330,41 +244,6 @@ header a{
     height: 600px;
     overflow: visible;
 }
-@media screen and (max-width: 1199px){
-    .opened{
-        height: 475px;
-    }
-}
-@media screen and (max-width: 991px){
-    .opened{
-        height: 360px;
-    }
-}
-@media screen and (max-width: 767px){
-    .opened{
-        height: 270px;
-    }
-}
-@media screen and (max-width: 500px){
-    .opened{
-        height: 245px;
-    }
-}
-@media screen and (max-width: 450px){
-    .opened{
-        height: 225px;
-    }
-}
-@media screen and (max-width: 400px){
-    .opened{
-        height: 195px;
-    }
-}
-@media screen and (max-width: 320px){
-    .opened{
-        height: 155px;
-    }
-}
 #section3 img{
   display: block;
   width: 100%;
@@ -374,18 +253,6 @@ header a{
 }
 #section3 img:hover{
     opacity: 0.6;
-}
-/*
-@media screen and (max-width: 100%){
-    #section3{
-        height: 250px;
-    }
-}
-*/
-@media screen and (max-width: 800px){
-    #section3{
-/*        height: 1px;*/
-    }
 }
 /*BUTTON*/
 .buttonBig{
@@ -445,21 +312,6 @@ header a{
     width: auto;
     height: auto;
     background-color: #ffffff;
-}
-@media screen and (max-width: 1225px){
-    .toNonDisplay img{
-        width: 8%;
-    }
-}
-@media screen and (max-width: 995px){
-    .toNonDisplay img{
-        width: 5%;
-    }
-}
-@media screen and (max-width: 775px){
-    .toNonDisplay{
-        display: none;
-    }
 }
 .mySlides1 img{
     margin-left: 50px;
@@ -537,52 +389,6 @@ header a{
     margin-bottom: 20px;
     width: 70%;
 }
-@media screen and (max-width: 665px){  
-    #my_form{
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-    }
-}
-@media screen and (max-width: 535px){  
-    #my_form{
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-    }
-    .titleInputs2{
-        width: 100%;
-    }
-    .titleInput2{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 425px){  
-    #my_form{
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-    }
-    .titleInputs2{
-        width: 150%;
-    }
-    .titleInput2{
-        width: 150%;
-    }
-}
-@media screen and (max-width: 335px){  
-    #my_form{
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 0px;
-    }
-    .titleInputs2{
-        width: 175%;
-    }
-    .titleInput2{
-        width: 175%;
-    }
-}
 .messageInput{
     border: none;
     padding-top: 10px;
@@ -613,19 +419,6 @@ header a{
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
-}
-@media screen and (max-width: 767px){
-    .projectForm .inputs{
-        width: 70%;
-        margin-bottom: 20px;
-    }
-    .titleInput{
-         width: 70%;
-         margin-top: 0px;
-    }
-    .noBorders2{
-        width: 70%;
-    }
 }
 .send{
     font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
@@ -694,6 +487,218 @@ footer li{
 .third-column-footer{
     margin-left: 275px;
 }
+/*NAV_BAR_MEDIA*/
+@media screen and (max-width: 1840px){
+    .marginToRight{
+        margin-left: 60%;
+    }
+}
+@media screen and (max-width: 1725px){
+    .marginToRight{
+        margin-left: 55%;
+    }
+}
+@media screen and (max-width: 1500px){
+    .marginToRight{
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width: 1345px){
+    .marginToRight{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 1230px){
+    .marginToRight{
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 1120px){
+    .marginToRight{
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 1040px){
+    .marginToRight{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 991px){
+    .marginToRight{
+        margin-left: 80%;
+    }
+}
+@media screen and (max-width: 850px){
+    .marginToRight{
+        margin-left: 70%;
+    }
+}
+@media screen and (max-width: 775px){
+    .marginToRight{
+        margin-left: 65%;
+    }
+}
+@media screen and (max-width: 767px){
+    .marginToRight{
+        margin-left: 0%;
+    }
+}
+/*POINTS_MEDIA*/
+@media screen and (max-width: 991px){
+    .points img{
+        width: 10%;
+        height: 70%;
+    }
+}
+@media screen and (max-width: 767px){
+    .points img{
+        width: 15%;
+        height: 75%;
+    }
+}
+@media screen and (max-width: 525px){
+    .points img{
+        width: 15%;
+        height: 65%;
+    }
+}
+@media screen and (max-width: 400px){
+    .points img{
+        width: 15%;
+        height: 55%;
+    }
+}
+/*PORTFOLIO_MEDIA*/
+@media screen and (max-width: 1199px){
+    .opened{
+        height: 475px;
+    }
+}
+@media screen and (max-width: 991px){
+    .opened{
+        height: 360px;
+    }
+}
+@media screen and (max-width: 767px){
+    .opened{
+        height: 270px;
+    }
+}
+@media screen and (max-width: 500px){
+    .opened{
+        height: 245px;
+    }
+}
+@media screen and (max-width: 450px){
+    .opened{
+        height: 225px;
+    }
+}
+@media screen and (max-width: 400px){
+    .opened{
+        height: 195px;
+    }
+}
+@media screen and (max-width: 320px){
+    .opened{
+        height: 155px;
+    }
+}
+/*CAROUSEL_MEDIA*/
+@media screen and (max-width: 1225px){
+    .toNonDisplay img{
+        width: 8%;
+    }
+}
+@media screen and (max-width: 995px){
+    .toNonDisplay img{
+        width: 5%;
+    }
+}
+@media screen and (max-width: 775px){
+    .toNonDisplay{
+        display: none;
+    }
+}
+/*FORM_MEDIA*/
+@media screen and (max-width: 665px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 535px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .titleInputs2{
+        width: 100%;
+    }
+    .titleInput2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .titleInputs2{
+        width: 150%;
+    }
+    .titleInput2{
+        width: 150%;
+    }
+}
+@media screen and (max-width: 335px){  
+    #my_form{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .titleInputs2{
+        width: 175%;
+    }
+    .titleInput2{
+        width: 175%;
+    }
+}
+/*FORM_MEDIA*/
+@media screen and (max-width: 767px){
+    .projectForm .inputs{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .titleInput{
+         width: 70%;
+         margin-top: 0px;
+    }
+    .noBorders2{
+        width: 70%;
+    }
+}
+/*PORTFOLIO_MEDIA*/
+@media screen and (max-width: 600px){
+    #section2{
+        margin-left: 15px;
+    }
+    #section3{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 576px){
+    #section2{
+        margin-left: 15px;
+    }
+    #section3{
+        margin-left: 15px;
+    }
+}
+/*FOOTER_MEDIA*/
 @media screen and (max-width: 1205px){
     .third-column-footer{
         margin-left: 200px;

@@ -30,22 +30,62 @@ header a:hover{
     color: #91d8d5;
 }
 .marginToRight{
-    margin-left: 1200px;
+    margin-left: 64%;
     float: right;
 }
-@media screen and (max-width: 1871px){
+@media screen and (max-width: 1840px){
     .marginToRight{
-        margin-left: 1400px;
+        margin-left: 60%;
     }
 }
-@media screen and (max-width: 1775px){
+@media screen and (max-width: 1725px){
     .marginToRight{
-        margin-left: 1300px;
+        margin-left: 55%;
     }
 }
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1500px){
     .marginToRight{
-        margin-left: 1200px;
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width: 1345px){
+    .marginToRight{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 1230px){
+    .marginToRight{
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 1120px){
+    .marginToRight{
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 1040px){
+    .marginToRight{
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 991px){
+    .marginToRight{
+        margin-left: 80%;
+    }
+}
+@media screen and (max-width: 850px){
+    .marginToRight{
+        margin-left: 70%;
+    }
+}
+@media screen and (max-width: 775px){
+    .marginToRight{
+        margin-left: 65%;
+    }
+}
+@media screen and (max-width: 767px){
+    .marginToRight{
+        margin-left: 0%;
     }
 }
 /*SECTION1*/
@@ -66,39 +106,45 @@ header a:hover{
     margin-bottom: 90px;
 }
 /*SECTION2*/
-#points{
+/*POINTS*/
+.points{
     background-color: #10c9c3;
-    width: 100%;
-    height: auto;
-}
-#points{
     color: white;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
-.marginTopMarginBottom{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-#points img{
-    width: 20%;
-    height: auto;
-    margin-top: 10px;
+.points img{
+    width: 25%;
+    height: 60%;
+    float: left;
     margin-right: 25px;
-    float: left;
 }
-#points h2{
-    float: left;
-    margin-top: -0px;
-}
-@media screen and (max-width: 740px){
-    #points h2{
-        margin-top: 20px;
-        float: none;
-    }
-    #points img{
-        margin-top: 15px;
+@media screen and (max-width: 991px){
+    .points img{
+        width: 10%;
+        height: 70%;
     }
 }
-#points p{
+@media screen and (max-width: 767px){
+    .points img{
+        width: 15%;
+        height: 75%;
+    }
+}
+@media screen and (max-width: 525px){
+    .points img{
+        width: 15%;
+        height: 65%;
+    }
+}
+@media screen and (max-width: 400px){
+    .points img{
+        width: 15%;
+        height: 55%;
+    }
+}
+.points p{
+    text-transform: uppercase;
     float: left;
 }
 /*SECTION3*/
@@ -122,6 +168,17 @@ header a:hover{
 #aboutMe img{
     margin-bottom: 75px;
 }
+@media screen and (max-width: 992px){
+    .aboutMeImage{
+        margin-bottom: 50px;
+    }
+    #aboutMe h1{
+        margin-top: 30px
+    }
+    #aboutMe img{
+        margin-bottom: 35px;
+    }
+}
 /*SECTION4*/
 #needAProject{
     width: 100%;
@@ -132,6 +189,7 @@ header a:hover{
     text-align: center;
 }
 #needAProject h1{
+    padding-top: 20px;
     margin-bottom: 25px;
 }
 #needAProject p{
@@ -145,6 +203,7 @@ header a:hover{
     border-radius: 4px;
     background-color: #10c9c3;
     color: white;
+    margin-bottom: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
@@ -164,6 +223,16 @@ header a:hover{
     text-align: center;
     float: left;
     margin-left: 175px;
+}
+@media screen and (max-width: 991px){
+    .successImg{
+        margin-left: 115px;
+    }
+}
+@media screen and (max-width: 767px){
+    .successImg{
+        margin-left: 0px;
+    }
 }
 /*FORMS*/
 #forms{
@@ -285,6 +354,40 @@ footer ul{
 footer li{
     text-decoration: none;
     list-style-type: none;
+}
+.third-column-footer{
+    margin-left: 275px;
+}
+@media screen and (max-width: 1205px){
+    .third-column-footer{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 992px){
+    .third-column-footer{
+        margin-left: 0px;
+    }
+}
+/*MEDIA*/
+@media screen and (max-width: 1199px){
+    #n{
+        margin-bottom: 20px;
+        width: 85%;
+    }
+    #e{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 351px){
+    #n{
+        width: 100%;
+    }
+    #e{
+        width: 100%;
+    }
+    .forLastInput{
+        width: 100%;
+    }
 }
 /****************/
 .w3-animate-input{transition:width 0.4s ease-in-out}

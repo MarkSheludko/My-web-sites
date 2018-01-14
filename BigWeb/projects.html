@@ -89,7 +89,7 @@
                             <p class="bottomMargin"></p>
                         </div>
                         <div class="col-lg-6 bigImage">
-                            <img class="imgRight" src="img/project/image.jpg">
+                            <img class="img-responsive imgRight" src="img/project/image.jpg">
                         </div>
                     </span>
                     <span class="mySlides">
@@ -103,7 +103,7 @@
                             <p class="bottomMargin"></p>
                         </div>
                         <div class="col-lg-6 bigImage">
-                            <img class="imgRight" src="img/project/f9pjwad4qbe5v39nbe9z.png">
+                            <img class="img-responsive imgRight" src="img/project/f9pjwad4qbe5v39nbe9z.png">
                         </div>
                     </span>
                     <span class="mySlides">
@@ -116,7 +116,7 @@
                             <p class="bottomMargin"></p>
                         </div>
                         <div class="col-lg-6 bigImage">
-                            <img class="imgRight" src="img/project/2fc12eb84eb1bcd7a34f3d60b0515953.jpg">
+                            <img class="imgRight" src="img-responsive img/project/2fc12eb84eb1bcd7a34f3d60b0515953.jpg">
                         </div>
                     </span>
                 </div>
@@ -129,48 +129,37 @@
                 <a href="#" class="to-center-from-right rightLink" onclick="plusDivs(+1)"><p>Next project<i class="fa fa-arrow-right linkMarginLeft"></i></p></a>
             </div>
         </section>
-<!--       SECTION2      -->
-        <section id="forms">
-            <div class="container" id="toNonDisplay">
-                <h1><b>Need a project?</b></h1>
-                <p class="orderIt">You can order it!</p>
+<!--    NEED A PROJECT?    -->
+        <section class="projectForm">
+            <div class="container">
+                <h1><b>Need a Project?</b></h1>
+
+                <p class="projectFormTxt">You can order it!</p>
                 <form id="my_form" onsubmit="submitForm(); return false;">
-                     <p>
-                        <input class="inputs titleInputs marginRight" id="n" placeholder="Your Name" required>
-                        <input class="inputs titleInputs" id="e" placeholder="Your Email Address" type="email" required>
-                    </p>
                     <p>
-                        <input class="input titleInput" id="e" placeholder="Your Project`s Name" required>
-                     </p>
-                        <input class="w3-input w3-border w3-animate-input forLastInput noBorders2" type="text" style="width:30%" placeholder="Description" required>
-                     <p class="center bottomMargin">
-                        <input class="send" id="mybtn" type="submit" onclick="success()" value="Send your order"> 
-                        <span id="status"></span>
-                     </p>
-                </form>
+                        <input class="inputs marginRight" id="n" placeholder="Your Name" required>
+                        <input class="inputs" id="e" placeholder="Your Email Address" type="email" required>
+                    </p>
+                    <p><input class="input titleInput" id="e" placeholder="Your Title" required></p>
+                    <textarea class="w3-input w3-border w3-animate-input noBorders2" type="message" placeholder="Description" style="width:48%;" required></textarea>
+                    <p class="center button-submit"><input class="send" id="mybtn" type="submit" value="Send order"> <span id="status"></span></p>
+                </form> 
             </div>
-            <section id="success">
-                <div class="container">
-                    <img class="successImg img-responsive" src="img/project/success.png">
-                    <h3><b>Your order will be sent on your email</b></h3>
-                    <p>Our manager will contact with you during 3 day</p>
-                </div>
-            </section>
         </section>
 <!--    FOOTER    -->
         <footer>
             <div class="container marginTop">
                 <div class="row">
-                    <div class="col-lg-5 col-md-4">
+                    <div class="col-lg-3 col-md-2 col-sm-3 col-12 first-column-footer">
                         <h6>Piroll Design, Inc.</h6>
                         <p>© 2018 Piroll. All rights reserved.</p>
                         <p>Designed by marekhwy.</p>
                     </div>
-                    <div class="col-lg-3 col-md-3">
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12 second-column-footer">
                         <p>hello@pirolltheme.com</p>
                         <p>+44 987 065 908</p>
                     </div>
-                    <div class="col-lg-1 col-md-2">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-3 third-column-footer">
                         <ul>
                             <li><a href="#">Project</a></li>
                             <li><a href="#">About</a></li>
@@ -178,21 +167,20 @@
                             <li><a href="#">Carreer</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-1 col-md-2">
-                        <ul>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Legals</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-1 col-md-0"></div>
-                    <div class="col-lg-1 col-md-2">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-3 four-column-footer">
                         <ul>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-3 five-column-footer">
+                        <ul>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Legals</a></li>
                         </ul>
                     </div>
                 </div>
