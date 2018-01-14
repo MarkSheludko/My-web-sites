@@ -13,33 +13,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">      -->
-<!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
-        <script>
-            function _(id){ return document.getElementById(id); }
-            function submitForm(){
-                _("mybtn").disabled = true;
-                _("status").innerHTML = 'please wait ...';
-                var formdata = new FormData();
-                formdata.append( "n", _("n").value );
-                formdata.append( "e", _("e").value );
-                formdata.append( "t", _("t").value );
-                formdata.append( "m", _("m").value );
-                var ajax = new XMLHttpRequest();
-                ajax.open( "POST", "example_parser.php" );
-                ajax.onreadystatechange = function() {
-                    if(ajax.readyState == 4 && ajax.status == 200) {
-                        if(ajax.responseText == "success"){
-                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
-                        } else {
-                            _("status").innerHTML = ajax.responseText;
-                            _("mybtn").disabled = false;
-                        }
-                    }
-                }
-                ajax.send( formdata );
-            }
-        </script>
     </head>
     <body>
         <div class="loader">
@@ -267,7 +240,7 @@
 <!--    BUTTON    -->
 <!--        toIncrease-->
         <section id="buttonMore">
-                <section class="bigButton"><button class="buttonBig" onclick="toIncrease()">Load More Works</button></section>
+                <section class="bigButton"><button class="buttonBig" id="btt-for-jquery" onclick="toIncrease()">Load More Works</button></section>
         </section>
 <!--    VIDEO SECTION   -->
         <section id="video">
@@ -402,16 +375,16 @@
         <footer>
             <div class="container marginTop">
                 <div class="row">
-                    <div class="col-lg-5 col-md-4">
+                    <div class="col-lg-3 col-md-2 col-sm-3 col-12 first-column-footer">
                         <h6>Piroll Design, Inc.</h6>
                         <p>© 2018 Piroll. All rights reserved.</p>
                         <p>Designed by marekhwy.</p>
                     </div>
-                    <div class="col-lg-3 col-md-3">
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-12 second-column-footer">
                         <p>hello@pirolltheme.com</p>
                         <p>+44 987 065 908</p>
                     </div>
-                    <div class="col-lg-1 col-md-2">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-3 third-column-footer">
                         <ul>
                             <li><a href="#">Project</a></li>
                             <li><a href="#">About</a></li>
@@ -419,21 +392,20 @@
                             <li><a href="#">Carreer</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-1 col-md-2">
-                        <ul>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Legals</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-1 col-md-0"></div>
-                    <div class="col-lg-1 col-md-2">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-3 four-column-footer">
                         <ul>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Twitter</a></li>
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-3 five-column-footer">
+                        <ul>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Legals</a></li>
                         </ul>
                     </div>
                 </div>
@@ -456,13 +428,24 @@ window.onclick = function(event) {
     }
 }
 </script>
+<!--    OPENER FOR PORTFOLIO    -->     
+        <script>
+        $(document).ready(function(){
+            $("#btt-for-jquery").click(function(){
+                $("#toSmall").toggleClass("opened");
+                $(this).addClass("unvisible");
+            });
+        });
+        </script>
+<!--
         <script>
             function toIncrease(){
-                document.getElementById("toSmall").style.height = "600px";
+                document.getElementById("toSmall").style.height = "300px";
                 document.getElementById("toSmall").style.overflow = "visible";
                 document.getElementById("buttonMore").style.display = "none";
             }
         </script>
+-->
         <script>
           function initMap() {
             var uluru = {lat: 34.062296, lng: -118.4169};
@@ -536,6 +519,32 @@ window.onclick = function(event) {
                 if (myIndex > x.length) {myIndex = 1}    
                 x[myIndex-1].style.display = "block";  
                 setTimeout(carousel, 3000);
+            }
+        </script>
+        
+        <script>
+            function _(id){ return document.getElementById(id); }
+            function submitForm(){
+                _("mybtn").disabled = true;
+                _("status").innerHTML = 'please wait ...';
+                var formdata = new FormData();
+                formdata.append( "n", _("n").value );
+                formdata.append( "e", _("e").value );
+                formdata.append( "t", _("t").value );
+                formdata.append( "m", _("m").value );
+                var ajax = new XMLHttpRequest();
+                ajax.open( "POST", "example_parser.php" );
+                ajax.onreadystatechange = function() {
+                    if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success"){
+                            _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+                        } else {
+                            _("status").innerHTML = ajax.responseText;
+                            _("mybtn").disabled = false;
+                        }
+                    }
+                }
+                ajax.send( formdata );
             }
         </script>
     <script async defer

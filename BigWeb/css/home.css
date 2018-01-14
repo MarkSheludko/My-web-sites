@@ -321,7 +321,49 @@ header a{
     transition-duration: 2s;
 }
 .toSmall:hover {
-    height: 400px;
+    height: auto;
+}
+.unvisible{
+    display: none;
+}
+.opened{
+    height: 600px;
+    overflow: visible;
+}
+@media screen and (max-width: 1199px){
+    .opened{
+        height: 475px;
+    }
+}
+@media screen and (max-width: 991px){
+    .opened{
+        height: 360px;
+    }
+}
+@media screen and (max-width: 767px){
+    .opened{
+        height: 270px;
+    }
+}
+@media screen and (max-width: 500px){
+    .opened{
+        height: 245px;
+    }
+}
+@media screen and (max-width: 450px){
+    .opened{
+        height: 225px;
+    }
+}
+@media screen and (max-width: 400px){
+    .opened{
+        height: 195px;
+    }
+}
+@media screen and (max-width: 320px){
+    .opened{
+        height: 155px;
+    }
 }
 #section3 img{
   display: block;
@@ -332,6 +374,18 @@ header a{
 }
 #section3 img:hover{
     opacity: 0.6;
+}
+/*
+@media screen and (max-width: 100%){
+    #section3{
+        height: 250px;
+    }
+}
+*/
+@media screen and (max-width: 800px){
+    #section3{
+/*        height: 1px;*/
+    }
 }
 /*BUTTON*/
 .buttonBig{
@@ -636,6 +690,19 @@ footer ul{
 footer li{
     text-decoration: none;
     list-style-type: none;
+}
+.third-column-footer{
+    margin-left: 275px;
+}
+@media screen and (max-width: 1205px){
+    .third-column-footer{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 992px){
+    .third-column-footer{
+        margin-left: 0px;
+    }
 }
 /*For carousel*/
 .mySlides {display:none}
