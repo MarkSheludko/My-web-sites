@@ -1,0 +1,75 @@
+/*DEFAULT*/
+.center{
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.color-h{
+    color: #273d46;
+}
+.color-travel{
+    color: #969da0;
+    font-family: Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif; 
+}
+.color-p{
+    color: #687378;
+}
+.backgroundcolor-button{
+    background-color: #80b7b3;
+}
+body{
+/*    background-color: black;*/
+}
+.parallax-window {
+    min-height: 1000px;
+    background: transparent;
+    background-repeat: no-repeat;
+}
+.white{
+    color: white;
+}
+/*HEADER*/
+.img-center{
+    margin-left: 265px;
+}
+/*SECTION1*/
+.section1 .color-travel{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.section1 .color-h{
+    font-size: 2.9em;
+    margin-bottom: 40px;
+}
+.section1 .color-p{
+    font-size: 1.8em;
+}
+.section1 button{
+    color: #ffffff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    background-color: #80b7b3;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.section1 button:hover{
+    background-color: #679592;
+}
+.arrow{
+    padding-left: 20px;
+}
+.img2{
+/*    margin-top: 25px;*/
+    position: relative;
+    margin-right: -405px;
+}
