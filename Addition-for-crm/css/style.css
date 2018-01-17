@@ -67,3 +67,34 @@
 .man-img{
     position: relative;
 }
+/*Navigation*/
+.navigation h1{
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+.white-container{
+    height: 500px;
+    width: 245px;
+    padding-top: 10px;
+    background-color: #f5f5f5;
+}
+.dashboard{
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.a-dashboard{
+    color: black;
+    margin-left: 5px;
+}
+.top{
+    padding-top: 10px;
+}
+.a-for-dashboard{
+    text-decoration: none;
+}
+.dashboard:hover{
+    background-color: #f5f5f5;
+}
