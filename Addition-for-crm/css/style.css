@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #656565;
+}
+.navbar a img{
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.search-input{
+    color: #7b7b7b;
+    border: 1px solid #7b7b7b;
+    width: 300px;
+}
+.input-group{
+    margin-right: 700px;
+}
+.form-control {
+  display: block;
+  width: 500px!important;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.notification-icon:hover{
+    background-image: url(/img/notification-icon-2.png);
+}
+.notification-icon{
+    margin-left: -147px;
+}
+.user-icon{
+    margin-left: -240px;
+}
+.user{
+    margin-top: 10px;
+    margin-left: -100px;
+    color: #636363;
+}
+.user h3{
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 1px;
+    position: absolute;
+}
+.go-to-profile{
+    position: relative;
+    margin-right: 10px;
+}
+.go-to-profile:hover{
+    color: #141414;
+}
+.man-img{
+    position: relative;
+}
