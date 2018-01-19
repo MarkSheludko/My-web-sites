@@ -11,6 +11,10 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="/js/RGraph/RGraph.svg.common.core.js"></script>
+        <script src="/js/RGraph/RGraph.svg.common.tooltips.js"></script>
+        <script src="/js/RGraph/RGraph.svg.line.js"></script>
 	</head>
 	<body>
         <nav class="navbar">
@@ -69,7 +73,66 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-10">
+                   <div class="server-status">
+                      <h1><b>Server status</b></h1>
+                      <button>Active</button>
+                       <div style="width: 725px; height: 255px" id="chart-container"></div>
+                       <p class="browsers">Google Chrome</p>
+                       <p class="percents1">32%</p>
+                       <hr>
+                       <p class="browsers">Mozilla Firefox</p>
+                       <p class="percents2">17%</p>
+                       <hr>
+                       <p class="browsers">Safari</p>
+                       <p class="percents3">20%</p>
+                       <hr>
+                       <div class="row">
+                           <div class="col-2">
+                               <h1 class="bottom-h1"><b>167GB</b></h1>
+                               <p>Usage</p>
+                           </div>
+                           <div class="col-2">
+                               <h1 class="bottom-h2"><b>320GB</b></h1>
+                               <p>Space</p>
+                           </div>
+                           <div class="col-2">
+                               <h1 class="bottom-h3"><b>57.4%</b></h1>
+                               <p>CPU</p>
+                           </div>
+                           <div class="col-2">
+                               <h1 class="bottom-h1"><b>1:06:55:04</b></h1>
+                               <p>Up Time</p>
+                           </div>
+                       </div>
+                   </div>
+                </div>
             </div>
         </div>
+        
+<!--   SCRIPTS   -->
+   <script>
+    new RGraph.SVG.Line({
+        id: 'chart-container',
+        data: [
+            [15,23,19,29,13,35,20],
+            [20,17,27,33,24,30,25]
+        ],
+        options: {
+            hmargin: 15,
+            gutterLeft: 0,
+            gutterRight: 12,
+            gutterBottom: 50,
+            yaxisMax: 50,
+            linewidth: 2,
+            backgroundGridVlinesCount: 6,
+            backgroundGridHlinesCount: 3,
+            tooltips: [
+                'CPU - 56.6', 'CPU - 59', 'CPU - 47', 'CPU - 50', 'CPU - 61', 'CPU - 55', 'CPU - 49',
+                'CPU - 59', 'CPU - 65', 'CPU - 50', 'CPU - 53', 'CPU - 57', 'CPU - 63', 'CPU - 59'
+            ]
+        }
+    }).draw();
+   </script>
 	</body>
 </html>
