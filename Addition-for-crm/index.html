@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
@@ -73,40 +72,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-10">
-                   <div class="server-status">
-                      <h1><b>Server status</b></h1>
-                      <button>Active</button>
-                       <div style="width: 725px; height: 255px" id="chart-container"></div>
-                       <p class="browsers">Google Chrome</p>
-                       <p class="percents1">32%</p>
-                       <hr>
-                       <p class="browsers">Mozilla Firefox</p>
-                       <p class="percents2">17%</p>
-                       <hr>
-                       <p class="browsers">Safari</p>
-                       <p class="percents3">20%</p>
-                       <hr>
-                       <div class="row">
-                           <div class="col-2">
-                               <h1 class="bottom-h1"><b>167GB</b></h1>
-                               <p>Usage</p>
+                <div class="col-lg-10 no-padding">
+                <!--    BLUE-LINE-PERCENTS    -->
+                    <div class="row">
+                        <div class="blue-container">
+                        <div class="row">
+                           <div class="first-percents">
+                               <h1>Consulting</h1>
+                               <p><b>60%</b></p>
+                                <div class="container-for-center">
+                                    <div class="progress">
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
                            </div>
-                           <div class="col-2">
-                               <h1 class="bottom-h2"><b>320GB</b></h1>
-                               <p>Space</p>
+                           <div class="second-percents">
+                               <h1>Online tutorials</h1>
+                               <p><b>35%</b></p>
+                                <div class="container-for-center">
+                                    <div class="progress">
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
                            </div>
-                           <div class="col-2">
-                               <h1 class="bottom-h3"><b>57.4%</b></h1>
-                               <p>CPU</p>
+                           <div class="third-percents">
+                               <h1>Edu management</h1>
+                               <p><b>25%</b></p>
+                                <div class="container-for-center">
+                                    <div class="progress">
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
                            </div>
-                           <div class="col-2">
-                               <h1 class="bottom-h1"><b>1:06:55:04</b></h1>
-                               <p>Up Time</p>
+                           <div class="four-percents">
+                               <h1>Completed tasks</h1>
+                               <p><b>85%</b></p>
+                                <div class="container-for-center">
+                                    <div class="progress">
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
                            </div>
-                       </div>
-                   </div>
+                            <div class="darkblue-container">
+                                <img class="circled-percents" src="img/rounded-percents.png">
+                                <h1>$30.000<span class="light">revenue</span></h1>
+                                <img src="img/diagram-icon-2.png">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 <!--  INFO-SECTION   -->
+                  <div class="row">
                    <div class="info">
                        <div class="row">
                            <div class="info1">
@@ -139,11 +155,50 @@
                            </div>
                        </div>
                    </div>
+                    </div>
+                <!--   SERVER-STATUS   -->
+                   <div class="row">
+                       <div class="server-status">
+                      <h1><b>Server status</b></h1>
+                      <button>Active</button>
+                       <div style="width: 725px; height: 255px" id="chart-container"></div>
+                       <p class="browsers">Google Chrome</p>
+                       <p class="percents1">32%</p>
+                       <hr>
+                       <p class="browsers">Mozilla Firefox</p>
+                       <p class="percents2">17%</p>
+                       <hr>
+                       <p class="browsers">Safari</p>
+                       <p class="percents3">20%</p>
+                       <hr>
+                       <div class="row">
+                           <div class="col-2">
+                               <h1 class="bottom-h1"><b>167GB</b></h1>
+                               <p>Usage</p>
+                           </div>
+                           <div class="col-2">
+                               <h1 class="bottom-h2"><b>320GB</b></h1>
+                               <p>Space</p>
+                           </div>
+                           <div class="col-2">
+                               <h1 class="bottom-h3"><b>57.4%</b></h1>
+                               <p>CPU</p>
+                           </div>
+                           <div class="col-2">
+                               <h1 class="bottom-h1"><b>1:06:55:04</b></h1>
+                               <p>Up Time</p>
+                           </div>
+                       </div>
+                   </div>
+                   </div>
                 </div>
             </div>
         </div>
         
 <!--   SCRIPTS   -->
+<!-- BLUE-LINE-CIRCLE -->
+  
+
    <script>
     new RGraph.SVG.Line({
         id: 'chart-container',
