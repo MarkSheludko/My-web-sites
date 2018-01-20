@@ -124,7 +124,7 @@ body{
 /*DARKBLUE-LINE-CHART*/
 .darkblue-line-container{
 /*    position: relative;*/
-    width: 1325px;
+    width: 1310px;
     height: 320px;
     background-color: #4285f4;
     color: white;
@@ -161,31 +161,34 @@ body{
     font-size: 1em;
 }
 .light-blue-container1{
-    width: 273px;
+    width: 275px;
     height: 93px;
     background-color: #5593f9;
     color: white;
     text-transform: uppercase;
+    margin-left: 15px;
     margin-bottom: 10px;
     padding-top: 15px;
     padding-left: 15px;
 }
 .light-blue-container2{
-    width: 273px;
+    width: 275px;
     height: 93px;
     background-color: #5593f9;
     color: white;
     text-transform: uppercase;
+    margin-left: 15px;
     margin-bottom: 10px;
     padding-top: 15px;
     padding-left: 15px;
 }
 .light-blue-container3{
-    width: 273px;
+    width: 275px;
     height: 93px;
     background-color: #5593f9;
     color: white;
     text-transform: uppercase;
+    margin-left: 15px;
     margin-bottom: 10px;
     padding-top: 15px;
     padding-left: 15px;
@@ -500,6 +503,9 @@ transition: width 0.6s ease;
     background-color: white;
     margin-right: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.no-margin{
+    width: 1585px;
 }
 .info1 h5{
     color: white;
