@@ -75,7 +75,6 @@ body{
     text-transform: uppercase;
     font-size: 1.1em;
     color: white;
-    margin-top: 10px;
     margin-bottom: 20px;
 }
 .white-container{
@@ -84,6 +83,7 @@ body{
     padding-top: 10px;
     margin-right: -20px;
     background-color: #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .dashboard{
     width: 100%;
@@ -208,7 +208,7 @@ body{
 .blue-container h1{
     font-size: 1.2em;
     float: left;
-    margin-right: 148px;
+    margin-right: 152px;
 }
 .container-for-center{
     width: 285px;
@@ -275,7 +275,7 @@ transition: width 0.6s ease;
 .second-percents h1{
     font-size: 1.2em;
     float: left;
-    margin-right: 94px;
+    margin-right: 113px;
 }
 .container-for-center{
     width: 300px;
@@ -319,7 +319,7 @@ transition: width 0.6s ease;
 .third-percents h1{
     font-size: 1.2em;
     float: left;
-    margin-right: 90px;
+    margin-right: 93px;
 }
 .container-for-center{
     width: 300px;
@@ -363,10 +363,10 @@ transition: width 0.6s ease;
 .four-percents h1{
     font-size: 1.2em;
     float: left;
-    margin-right: 97px;
+    margin-right: 101px;
 }
 .container-for-center{
-    width: 300px;
+    width: 280px;
 }
 .four-percents .progress .bar {
 width: 85%;
@@ -435,9 +435,11 @@ transition: width 0.6s ease;
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .server-status h1{
     color: #2b2e30;
+    font-size: 1.5em;
     float: left;
 }
 .server-status button{
@@ -448,7 +450,7 @@ transition: width 0.6s ease;
     text-transform: uppercase;
     font-size: 0.8em;
     margin-top: 5px;
-    margin-left: 447px;
+    margin-left: 506px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 3px;
@@ -497,6 +499,7 @@ transition: width 0.6s ease;
     height: 140px;
     background-color: white;
     margin-right: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .info1 h5{
     color: white;
@@ -542,6 +545,7 @@ transition: width 0.6s ease;
     background-color: white;
     margin-right: 25px;
     color: #5a5a5a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .info2 h5{
     color: white;
@@ -583,6 +587,7 @@ transition: width 0.6s ease;
     background-color: white;
     margin-right: 25px;
     color: #5a5a5a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .info3 h5{
     color: white;
@@ -621,6 +626,7 @@ transition: width 0.6s ease;
     background-color: white;
     margin-right: 25px;
     color: #5a5a5a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .info4 h5{
     color: white;
@@ -650,4 +656,394 @@ transition: width 0.6s ease;
 }
 .diagram4{
     margin-left: 6px;
+}
+/*SKILLS-STAT*/
+
+.skill-stat-container{
+    position: relative;
+    width: 520px;
+    height: 430px;
+    background-color: white;
+    margin-top: 35px;
+    padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.skill-stat-container button{
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: white;
+    color: #9a9a9a;
+    border: none;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    float: right;
+}
+.skill-stat-container h1{
+    margin-left: 2px;
+    color: #575c61;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+.skill-stat-container .user-personal{
+    color: #d3d3d3;
+    float: left;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 150px;
+}
+/*FIRST-PERCENTS-CHART*/
+.p-for-progress-bar{
+    margin-left: 2px;
+    color: #4c4c4c;
+    position: relative;
+}
+.right-side-percents{
+    float: right;
+    margin-top: 40px;
+}
+/*SECOND-PERCENTS-CHART*/
+.p-for-progress-bar2{
+    margin-left: 2px;
+    margin-top: 45px;
+    color: #4c4c4c;
+    position: relative;
+}
+.right-side-percents2{
+    float: right;
+    margin-top: 30px;
+}
+/*THIRD-PERCENTS-CHART*/
+.p-for-progress-bar3{
+    margin-left: 2px;
+    margin-top: 45px;
+    color: #4c4c4c;
+    position: relative;
+}
+.right-side-percents3{
+    float: right;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+/*FOUR-PERCENTS-CHART*/
+.p-for-progress-bar4{
+    margin-left: 2px;
+    margin-top: 45px;
+    color: #4c4c4c;
+    position: relative;
+}
+.right-side-percents4{
+    float: right;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+/*FIVE-PERCENTS-CHART*/
+.p-for-progress-bar5{
+    margin-left: 2px;
+    margin-top: 45px;
+    color: #4c4c4c;
+    position: relative;
+}
+.right-side-percents5{
+    float: right;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+/*BARS*/
+.col1, .col2 {
+  width: 48%;
+/*  height: 100%;*/
+  padding: 0 10px;
+}
+.col1 {
+  background-color: white;
+  float: left;
+}
+/* PROGRESS BAR - BASE */
+.meter { 
+	height: 8px;
+	position: relative;
+	background: #DCE0E3;
+    border-radius: 8px;
+    margin-left: -8px;
+}
+/*BLUE-CHART*/
+.meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: #3366ba;
+	position: relative;
+	overflow: hidden;
+}
+.meter > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #4285f4), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #4285f4), color-stop(.75, #4285f4), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, #4285f4 25%, transparent 25%, transparent 50%, #4285f4 50%, #4285f4 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, #4285f4 25%, transparent 25%, transparent 50%, #4285f4 50%, #4285f4 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, #4285f4 25%, transparent 25%, transparent 50%, #4285f4 50%, #4285f4 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(-45deg, #4285f4 25%, transparent 25%, transparent 50%, #4285f4 50%, #4285f4 75%, transparent 75%, transparent);
+	z-index: 1;
+	-webkit-background-size: 20px 20px;
+	-moz-background-size:    20px 20px;
+	background-size:         20px 20px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+/*RED-CHART*/
+.meter2 { 
+	height: 8px;
+	position: relative;
+	background: #DCE0E3;
+    border-radius: 8px;
+    margin-left: -8px;
+}
+.meter2 > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: #ec4839;
+	position: relative;
+	overflow: hidden;
+}
+.meter2 > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #c33f32), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #c33f32), color-stop(.75, #c33f32), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, #c33f32 25%, transparent 25%, transparent 50%, #c33f32 50%, #c33f32 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, #c33f32 25%, transparent 25%, transparent 50%, #c33f32 50%, #c33f32 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, #c33f32 25%, transparent 25%, transparent 50%, #c33f32 50%, #c33f32 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(-45deg, #c33f32 25%, transparent 25%, transparent 50%, #c33f32 50%, #c33f32 75%, transparent 75%, transparent);
+	z-index: 1;
+	-webkit-background-size: 20px 20px;
+	-moz-background-size:    20px 20px;
+	background-size:         20px 20px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+/*GREEN-CHART*/
+.meter3 { 
+	height: 8px;
+	position: relative;
+	background: #DCE0E3;
+    border-radius: 8px;
+    margin-left: -8px;
+}
+.meter3 > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: #2e954a;
+	position: relative;
+	overflow: hidden;
+}
+.meter3 > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #3cb55f), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #3cb55f), color-stop(.75, #3cb55f), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, #3cb55f 25%, transparent 25%, transparent 50%, #3cb55f 50%, #3cb55f 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, #3cb55f 25%, transparent 25%, transparent 50%, #3cb55f 50%, #3cb55f 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, #3cb55f 25%, transparent 25%, transparent 50%, #3cb55f 50%, #3cb55f 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(-45deg, #3cb55f 25%, transparent 25%, transparent 50%, #3cb55f 50%, #3cb55f 75%, transparent 75%, transparent);
+	z-index: 1;
+	-webkit-background-size: 20px 20px;
+	-moz-background-size:    20px 20px;
+	background-size:         20px 20px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+/*ORANGE-CHART*/
+.meter4 { 
+	height: 8px;
+	position: relative;
+	background: #DCE0E3;
+    border-radius: 8px;
+    margin-left: -8px;
+}
+.meter4 > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: #bf7502;
+	position: relative;
+	overflow: hidden;
+}
+.meter4 > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #e69009), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #e69009), color-stop(.75, #e69009), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, #e69009 25%, transparent 25%, transparent 50%, #e69009 50%, #e69009 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, #e69009 25%, transparent 25%, transparent 50%, #e69009 50%, #e69009 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, #e69009 25%, transparent 25%, transparent 50%, #e69009 50%, #e69009 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(-45deg, #e69009 25%, transparent 25%, transparent 50%, #e69009 50%, #e69009 75%, transparent 75%, transparent);
+	z-index: 1;
+	-webkit-background-size: 20px 20px;
+	-moz-background-size:    20px 20px;
+	background-size:         20px 20px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+/*DARK-CHART*/
+.meter5 { 
+	height: 8px;
+	position: relative;
+	background: #DCE0E3;
+    border-radius: 8px;
+    margin-left: -8px;
+}
+.meter5 > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: #4f6069;
+	position: relative;
+	overflow: hidden;
+}
+.meter5 > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #6d8390), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #6d8390), color-stop(.75, #6d8390), color-stop(.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, #6d8390 25%, transparent 25%, transparent 50%, #6d8390 50%, #6d8390 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, #6d8390 25%, transparent 25%, transparent 50%, #6d8390 50%, #6d8390 75%, transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, #6d8390 25%, transparent 25%, transparent 50%, #6d8390 50%, #6d8390 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(-45deg, #6d8390 25%, transparent 25%, transparent 50%, #6d8390 50%, #6d8390 75%, transparent 75%, transparent);
+	z-index: 1;
+	-webkit-background-size: 20px 20px;
+	-moz-background-size:    20px 20px;
+	background-size:         20px 20px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}
+
+
+
+/* PROGRESS BAR - ANIMATION */
+@-webkit-keyframes move {
+  0% {background-position: 0 0;}
+  100% {background-position: 30px 30px;}
+}
+@-moz-keyframes move {
+  0% {background-position: 0 0;}
+  100% {background-position: 30px 30px;}
 }

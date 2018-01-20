@@ -191,7 +191,7 @@
                        </div>
                    </div>
                     </div>
-                <!--   SERVER-STATUS   -->
+                <!--   SERVER-STATUS  -->
                     <div class="row">
                        <div class="server-status">
                       <h1><b>Server status</b></h1>
@@ -226,12 +226,60 @@
                        </div>
                    </div>
                    </div>
+                <!--   SKILLS STAT   -->
+                    <div class="row">
+                        <div class="skill-stat-container">
+                            <button>Add / Edit</button>
+                            <h1><b>Skill stat</b></h1>
+                            <p class="user-personal">User Personal Skills and Opportunities</p>
+                            
+                            
+                            <p class="right-side-percents">85%</p>
+                            <p class="p-for-progress-bar">Marketing</p>
+                            <div class="col1">
+                                <div class="meter" style="width: 487px;">
+			                        <span style="width: 85%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents2">95%</p>
+                            <p class="p-for-progress-bar2">Management</p>
+                            <div class="col1">
+                                <div class="meter2" style="width: 487px;">
+			                        <span style="width: 95%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents3">24%</p>
+                            <p class="p-for-progress-bar3">Development</p>
+                            <div class="col1">
+                                <div class="meter3" style="width: 487px;">
+			                        <span style="width: 24%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents4">50%</p>
+                            <p class="p-for-progress-bar4">Search Engine Optimization (SEO)</p>
+                            <div class="col1">
+                                <div class="meter4" style="width: 487px;">
+			                        <span style="width: 50%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents5">60%</p>
+                            <p class="p-for-progress-bar5">Web Design</p>
+                            <div class="col1">
+                                <div class="meter5" style="width: 487px;">
+			                        <span style="width: 60%;"></span>
+		                        </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
         </div>
-           <div class="small-lightblue-container">
-    </div>
+           <div class="small-lightblue-container"></div>
 <!--   SCRIPTS   -->
 <!--DARKBLUE-LINE-CHARTS-->
     <script>
@@ -292,8 +340,63 @@
     }).wave({frames: 70});
 </script>
 <!-- BLUE-LINE-CIRCLE -->
-  
-
+<!--SKILL-STAT-PROGRESS-BAR-->
+<!--FIRST-PERCENT-CHART-->
+        <script>
+            $(".meter > span").each(function() {
+	$(this)
+		.data("origWidth", $(this).width())
+		.width(0)
+		.animate({
+			width: $(this).data("origWidth")
+		}, 1200);
+});
+        </script>
+<!--SECOND-PERCENT-CHART-->
+        <script>
+            $(".meter2 > span").each(function() {
+	$(this)
+		.data("origWidth", $(this).width())
+		.width(0)
+		.animate({
+			width: $(this).data("origWidth")
+		}, 1200);
+});
+        </script>
+<!--THIRD-PERCENT-CHART-->
+        <script>
+            $(".meter3 > span").each(function() {
+	$(this)
+		.data("origWidth", $(this).width())
+		.width(0)
+		.animate({
+			width: $(this).data("origWidth")
+		}, 1200);
+});
+        </script>
+<!--FOUR-PERCENT-CHART-->
+        <script>
+            $(".meter4 > span").each(function() {
+	$(this)
+		.data("origWidth", $(this).width())
+		.width(0)
+		.animate({
+			width: $(this).data("origWidth")
+		}, 1200);
+});
+        </script>
+<!--FIVE-PERCENT-CHART-->
+        <script>
+            $(".meter5 > span").each(function() {
+	$(this)
+		.data("origWidth", $(this).width())
+		.width(0)
+		.animate({
+			width: $(this).data("origWidth")
+		}, 1200);
+});
+        </script>
+<!-- SCRIPT -->
    <script>
     new RGraph.SVG.Line({
         id: 'chart-container',
