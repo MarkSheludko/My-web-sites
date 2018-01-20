@@ -11,9 +11,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
+        
         <script src="/js/RGraph/RGraph.svg.common.core.js"></script>
         <script src="/js/RGraph/RGraph.svg.common.tooltips.js"></script>
         <script src="/js/RGraph/RGraph.svg.line.js"></script>
+        <script src="/js/RGraph/RGraph.common.core.js"></script>
+        <script src="/js/RGraph/RGraph.bar.js"></script>
+        
 	</head>
 	<body>
         <nav class="navbar">
@@ -36,7 +40,6 @@
 <!-- IMG with notification  <img src="img/notification-icon-2.png">-->
             </div>
         </nav>
-        
         <div class="container-fluid navigation">
             <div class="row">
                 <div class="col-lg-2">
@@ -73,6 +76,37 @@
                     </div>
                 </div>
                 <div class="col-lg-10 no-padding">
+                <!--    DARKBLUE-LINE-CHARTS    -->
+                    <div class="row">
+                        <div class="darkblue-line-container">
+                           <select>
+                            <option value="august">August / 2016</option>
+                            <option value="september">September / 2016</option>
+                            <option value="october">October / 2016</option>
+                            <option value="november">November / 2016</option>
+                           </select>
+                           <h1>Traffic</h1>
+                            <div class="charts">
+                                <div style="padding: 15px">
+                                    <canvas id="cvs" width="1300" height="255">[No canvas support]</canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="darkblue-line-container2">
+                            <div class="light-blue-container1">
+                                <h1>Views</h1>
+                                <h2>4,268</h2>
+                            </div>
+                            <div class="light-blue-container2">
+                                <h1>Clickthroughs</h1>
+                                <h2>3,239</h2>
+                            </div>
+                            <div class="light-blue-container3">
+                                <h1>Visitors</h1>
+                                <h2>2,922</h2>
+                            </div>
+                        </div>
+                    </div>
                 <!--    BLUE-LINE-PERCENTS    -->
                     <div class="row">
                         <div class="blue-container">
@@ -122,7 +156,7 @@
                     </div>
                     </div>
                 <!--  INFO-SECTION   -->
-                  <div class="row">
+                    <div class="row">
                    <div class="info">
                        <div class="row">
                            <div class="info1">
@@ -157,7 +191,7 @@
                    </div>
                     </div>
                 <!--   SERVER-STATUS   -->
-                   <div class="row">
+                    <div class="row">
                        <div class="server-status">
                       <h1><b>Server status</b></h1>
                       <button>Active</button>
@@ -196,6 +230,64 @@
         </div>
         
 <!--   SCRIPTS   -->
+<!--DARKBLUE-LINE-CHARTS-->
+    <script>
+
+    data       = [0,20,40,80,100];
+    data_chart = [0, 15, 0, 19, 0, 31, 0, 60, 0, 42, 0, 73, 0, 27, 0, 38, 0, 78, 0, 63, 0, 50, 0, 30, 0, 70,   0, 83, 0, 47, 0, 96, 0, 90, 0, 73, 0, 34, 0, 67, 0, 78, 0, 37, 0, 59, 0, 85, 0, 72, 0, 83,0, 43, 0, 33, 0]
+
+    new RGraph.Bar({
+        id: 'cvs',
+        data: data_chart,
+        options: {
+            labels: [
+                '','','1','','',
+                '','','2','','',
+                '','','3','','',
+                '','','4','','',
+                '','','5','','',
+                '','','6','','',
+                '','','7','','',
+                '','','8','','',
+                '','','9','','',
+                '','','10','','',
+                '','','11','','',
+                '','','12','','',
+                '','','13','','',
+                '','','14','','',
+                '','','15','','',
+                '','','16','','',
+                '','','17','','',
+                '','','18','','',
+                '','','19','','',
+                '','','20','','',
+                '','','21','','',
+                '','','22','','',
+                '','','23','','',
+                '','','24','','',
+                '','','25','','',
+                '','','26','','',
+                '','','27','','',
+                '','','28','','',
+                '','','29','','',
+                '','','30','','',
+                '','','31','',''
+            ],
+            colors: ['Gradient(#3068c6:#3068c6)'],
+//            rgba(0,0,0,0)
+            strokestyle: 'white',
+            textSize: 14,
+            numyticks: 5,
+            noaxes: true,
+            noxxes: true,
+            gutterLeft: 35,
+            hmargin: -1,
+            shadow: 0,
+            backgroundGridVlines: false,
+            backgroundGridBorder: false
+        }
+    }).wave({frames: 70});
+</script>
 <!-- BLUE-LINE-CIRCLE -->
   
 

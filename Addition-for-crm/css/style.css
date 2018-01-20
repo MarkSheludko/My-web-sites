@@ -73,7 +73,7 @@ body{
 /*Navigation*/
 .navigation h1{
     text-transform: uppercase;
-    font-size: 1.7em;
+    font-size: 1.1em;
 }
 .white-container{
     height: 500px;
@@ -105,6 +105,76 @@ body{
 .no-padding{
     padding-left: 0;
     padding-right: 0;
+}
+/*DARKBLUE-LINE-CHART*/
+.darkblue-line-container{
+/*    position: relative;*/
+    width: 1325px;
+    height: 320px;
+    background-color: #4285f4;
+    color: white;
+/*    padding-left: 15px;*/
+}
+.darkblue-line-container h1{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding-left: 15px;
+}
+.darkblue-line-container2{
+    width: 275px;
+    height: 320px;
+    background-color: #4285f4;
+    float: right;
+}
+.darkblue-line-container2 h1{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.darkblue-line-container2 h2{
+    font-size: 2em;
+}
+.darkblue-line-container select{
+    float: right;
+    background-color: #2e6cd4;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    height: 35px;
+    padding-left: 10px;
+    margin-right: 35px;
+    font-size: 1em;
+}
+.light-blue-container1{
+    width: 273px;
+    height: 93px;
+    background-color: #5593f9;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.light-blue-container2{
+    width: 273px;
+    height: 93px;
+    background-color: #5593f9;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.light-blue-container3{
+    width: 273px;
+    height: 93px;
+    background-color: #5593f9;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 /*BLUE-PERCENTS*/
 .blue-container{
