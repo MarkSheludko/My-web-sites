@@ -226,7 +226,7 @@
                        </div>
                    </div>
                    </div>
-                <!--   SKILLS STAT   -->
+                <!--   SKILLS-STAT   -->
                     <div class="row no-margin">
                         <div class="skill-stat-container">
                             <button>Add / Edit</button>
@@ -273,6 +273,120 @@
 			                        <span style="width: 60%;"></span>
 		                        </div>
                             </div>
+                        </div>
+                        
+                        <div class="skill-stat-container">
+                            <button>Add / Edit</button>
+                            <h1><b>Skill stat</b></h1>
+                            <p class="user-personal">User Personal Skills and Opportunities</p>
+                            
+                            
+                            <p class="right-side-percents">85%</p>
+                            <p class="p-for-progress-bar">Marketing</p>
+                            <div class="col1">
+                                <div class="meter" style="width: 487px;">
+			                        <span style="width: 85%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents2">95%</p>
+                            <p class="p-for-progress-bar2">Management</p>
+                            <div class="col1">
+                                <div class="meter2" style="width: 487px;">
+			                        <span style="width: 95%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents3">24%</p>
+                            <p class="p-for-progress-bar3">Development</p>
+                            <div class="col1">
+                                <div class="meter3" style="width: 487px;">
+			                        <span style="width: 24%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents4">50%</p>
+                            <p class="p-for-progress-bar4">Search Engine Optimization (SEO)</p>
+                            <div class="col1">
+                                <div class="meter4" style="width: 487px;">
+			                        <span style="width: 50%;"></span>
+		                        </div>
+                            </div>
+                            
+                            <p class="right-side-percents5">60%</p>
+                            <p class="p-for-progress-bar5">Web Design</p>
+                            <div class="col1">
+                                <div class="meter5" style="width: 487px;">
+			                        <span style="width: 60%;"></span>
+		                        </div>
+                            </div>
+                        </div>
+                        
+                        <div class="to-do-list-container">
+                            <button>Add / Edit</button>
+                            <h1><b>To do List</b></h1>
+                            <p class="user-personal">You have to do on this week</p>
+                            
+                            <div class="first-checkbox">
+                                <label class="container">
+                                 <span id="line1" class="word">Meeting with Google</span>
+                                 <span class="red-box">11:52</span>
+                                 <span id="done1" class="checked-green-box">Done</span>
+                                  <input id="check1" type="checkbox" onclick="checkFunc1()">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <hr class="first-hr">
+                            <div class="second-checkbox">
+                                <label class="container">
+                                 <span id="line2" class="word">Developing Coredashboard Front-end</span>
+                                 <span class="blue-box">Today</span>
+                                 <span id="done2" class="checked-green-box">Done</span>
+                                  <input id="check2" type="checkbox" onclick="checkFunc2()">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <hr class="first-hr">
+                            <div class="second-checkbox">
+                                <label class="container">
+                                 <span id="line3" class="word">Book flight for holiday</span>
+                                 <span class="gray-box">Yesterday</span>
+                                 <span id="done3" class="checked-green-box">Done</span>
+                                  <input id="check3" type="checkbox" onclick="checkFunc3()">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <hr class="first-hr">
+                            <div class="second-checkbox">
+                                <label class="container">
+                                 <span id="line4" class="word">Give Purhacse report</span>
+                                 <span class="purple-box">Monday</span>
+                                 <span id="done4" class="checked-green-box">Done</span>
+                                  <input id="check4" type="checkbox" onchange="checkFunc4()">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <hr class="first-hr">
+                            <div class="five-checkbox">
+                                <label class="container">
+                                 <span id="line5" class="word">Meeting with Google</span>
+                                 <span class="red-box">Thursday</span>
+                                 <span id="done5" class="checked-green-box">Done</span>
+                                  <input id="check5" type="checkbox" onclick="checkFunc5()">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <hr class="first-hr">
+                            <div class="six-checkbox">
+                                <label class="container">
+                                 <span id="line6" class="word">Wake up and work hard</span>
+                                 <span class="orange-box">Everyday</span>
+                                 <span id="done6" class="checked-green-box">Done</span>
+                                  <input id="check6" type="checkbox" onclick="checkFunc6()">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <hr class="first-hr">
                         </div>
                     </div>
                 </div>
@@ -395,6 +509,77 @@
 			width: $(this).data("origWidth")
 		}, 1200);
 });
+        </script>
+<!--TO-DO-LIST-->
+        <script>
+            function checkFunc1(){
+                var checkBox = document.getElementById("check1");
+                var doneBOx = document.getElementById("done1");
+                var lineBox = document.getElementById("line1");
+//                checkBox.checked = "checked";
+//                doneBOx.style.display = "inline";
+                if(checkBox.checked = "checked"){
+                    doneBOx.style.display = "inline";
+                    lineBox.style.textDecoration = "line-through";
+                } else {
+                    doneBOx.style.display = "none";
+                }
+            }
+            function checkFunc2(){
+                var checkBox = document.getElementById("check2");
+                var doneBOx = document.getElementById("done2");
+                var lineBox = document.getElementById("line2");
+                if(checkBox.checked = "checked"){
+                    doneBOx.style.display = "inline";
+                    lineBox.style.textDecoration = "line-through";
+                } else {
+                    doneBOx.style.display = "none";
+                }
+            }
+            function checkFunc3(){
+                var checkBox = document.getElementById("check3");
+                var doneBOx = document.getElementById("done3");
+                var lineBox = document.getElementById("line3");
+                if(checkBox.checked = "checked"){
+                    doneBOx.style.display = "inline";
+                    lineBox.style.textDecoration = "line-through";
+                } else {
+                    doneBOx.style.display = "none";
+                }
+            }
+            function checkFunc4(){
+                var checkBox = document.getElementById("check4");
+                var doneBOx = document.getElementById("done4");
+                var lineBox = document.getElementById("line4");
+                if(checkBox.checked = "checked"){
+                    doneBOx.style.display = "inline";
+                    lineBox.style.textDecoration = "line-through";
+                } else {
+                    doneBOx.style.display = "none";
+                }
+            }
+            function checkFunc5(){
+                var checkBox = document.getElementById("check5");
+                var doneBOx = document.getElementById("done5");
+                var lineBox = document.getElementById("line5");
+                if(checkBox.checked = "checked"){
+                    doneBOx.style.display = "inline";
+                    lineBox.style.textDecoration = "line-through";
+                } else {
+                    doneBOx.style.display = "none";
+                }
+            }
+            function checkFunc6(){
+                var checkBox = document.getElementById("check6");
+                var doneBOx = document.getElementById("done6");
+                var lineBox = document.getElementById("line6");
+                if(checkBox.checked = "checked"){
+                    doneBOx.style.display = "inline";
+                    lineBox.style.textDecoration = "line-through";
+                } else {
+                    doneBOx.style.display = "none";
+                }
+            }
         </script>
 <!-- SCRIPT -->
    <script>
