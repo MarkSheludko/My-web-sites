@@ -1041,7 +1041,40 @@ transition: width 0.6s ease;
 	         border-bottom-left-radius: 20px;
 	overflow: hidden;
 }
-
+/*CALIFORNIA-SECTION*/
+.california-container{
+    position: relative;
+    width: 520px;
+    height: 430px;
+    background-color: white;
+    margin-top: 35px;
+    margin-right: 12px;
+    padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.right-side-words h2{
+    float: right;
+}
+.right-side-words p{
+    float: right;
+    color: #d3d3d3;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 424px;
+}
+.california-container h1{
+    margin-left: 2px;
+    color: #ea4335;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.calendar-img{
+    position: absolute;
+    margin-left: -15px;
+    margin-right: -25px;
+    margin-top: 40px;
+}
 /*TO-DO-LIST*/
 .to-do-list-container{
     position: relative;
