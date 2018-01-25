@@ -491,7 +491,7 @@
                         </div>
                         
                         <div class="to-do-list-container">
-                            <button>Add / Edit</button>
+                            <button onclick="myFunction()">Add / Edit</button>
                             <h1><b>To do List</b></h1>
                             <p class="user-personal">You have to do on this week</p>
                             
@@ -773,5 +773,10 @@
         }
     }).draw();
    </script>
+   <script>
+function myFunction() {
+    document.getElementById("line1").innerHTML = "W3Schools";
+}
+</script>
 	</body>
 </html>
