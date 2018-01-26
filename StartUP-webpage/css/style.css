@@ -1,0 +1,13 @@
+.parallax-window {
+    min-height: 100%;
+    width: 100%;
+    background: transparent;
+    background-repeat: no-repeat;
+}
+/*HEADER*/
+.section1 a{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
