@@ -9,10 +9,10 @@
 		<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/parallax.js"></script>
 	</head>
 	<body>
 	    <header class="effect-2">
@@ -294,6 +294,69 @@
 				</div>
 			</div>
 		</section>
+		
+		<section id="section5">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/section5/section5-background.jpg">
+            	<div class="container center">
+            		<h1>Say hi</h1>
+					<form>
+						<div class="row">
+							<input onclick="opacity()" id="name" class="name" placeholder="Name">
+							<input id="email" class="email" placeholder="Email">
+						</div>
+						<textarea id="text" rows="5" cols="5" placeholder="Your message"></textarea>
+					</form>
+           			<button>Send message</button>
+            	</div>
+	    	</div>
+		</section>
+		
+		<section id="section6">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 first-col-prefooter">
+						<h1>About us</h1>
+						<p>Lorem ipsum dolor sit amet, consectetitecto beatae vitae dicta sunt explicabo. Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempuaerat voluptatem.</p>
+					</div>
+					<div class="col-lg-4">
+						<h1 class="quick-links">Quick Links</h1>
+						<div class="row">
+							<div class="col-5 quick">
+								<a href="#"><p><img src="img/section6/small-icon.png">Home</p></a>
+								<a href="#"><p><img src="img/section6/small-icon.png">Services</p></a>
+								<a href="#"><p><img src="img/section6/small-icon.png">Portfolio</p></a>
+								<a href="#"><p><img src="img/section6/small-icon.png">Pricing</p></a>
+								<a href="#"><p><img src="img/section6/small-icon.png">Contact Us</p></a>
+							</div>
+							<div class="col-5 quick">
+								<a href="#"><p><img src="img/section6/small-icon.png">Development</p></a>
+								<a href="#"><p><img src="img/section6/small-icon.png">Photography</p></a>
+								<a href="#"><p><img src="img/section6/small-icon.png">Design</p></a>
+								<a href="#"><p><img src="img/section6/small-icon.png">Manipulation</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<h1>Find Us On</h1>
+						<a href="#"><img src="img/section6/facebook-icon.png"></a>
+						<a href="#"><img src="img/section6/twitter-icon.png"></a>
+						<a href="#"><img src="img/section6/google-icon.png"></a>
+						<a href="#"><img src="img/section6/linkedin-icon.png"></a>
+						<h1 class="section6-h1-third">Subscribe Our Newsletter</h1>
+						<input placeholder="Your Email...">
+           				<div class="row">
+           					<button>Subscribe</button>
+           				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container center">
+				<h1>A Design By Mark SHeludko 2018</h1>
+			</div>
+		</footer>
 <!--SCRIPTS-->
 <!--SCRIPTS-FOR-SECTION1-&-SECTION4-->
 <script>
@@ -564,6 +627,16 @@
             $(this).addClass("unvisible");
         });
     });
+</script>
+<!--SCRIPTS-FOR-SECTION5-->
+<script>
+	var name = document.getElementById("name");
+	var email = document.getElementById("email");
+	var text = document.getElementById("text");
+	
+	function opacity(){
+		name.style.opacity = 0.2;
+	}
 </script>
 	</body>
 </html>

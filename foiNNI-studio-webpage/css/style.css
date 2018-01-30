@@ -349,11 +349,140 @@ header .second-container p{
 	margin-top: 10%;
 	margin-bottom: 7%;
 }
+/*SECTION5*/
+.parallax-window {
+/*    min-height: 1000px;*/
+    min-height: 100%;
+    background: transparent;
+    background-repeat: no-repeat;
+}
+#section5 h1{
+	color: #454546;
+	font-size: 2.7em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 5%;
+}
+#section5 form{
+	margin-top: 5%;
+}
+#section5 .name{
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 17.5%;
+	margin-right: 5%;
+	border: 1px solid #cfcfcf;
+	width: 30%;
+	color: white;
+	background-color: #cfcdca;
+	opacity: 0.8;
+}
+#section5 .email{
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border: 1px solid #cfcfcf;
+	width: 30%;
+	color: white;
+	background-color: #cfcdca;
+	opacity: 0.8;
+}
+#section5 form textarea{
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 3%;
+	border: 1px solid #cfcfcf;
+	width: 66.9%;
+	color: white;
+	background-color: #cfcdca;
+	opacity: 0.8;
+}
+#section5 button{
+	background-color: #1dde85;
+	color: #f5faee;
+	border: none;
+    font-size: 1.7em;
+  	letter-spacing: 1px;
+	width: 15%;
+	padding: 1% 0% 1% 0%;
+	margin: 3% 0% 5% 0%;
+}
+/*SECTION6*/
+#section6{
+	background-color: #0b0a0a;
+}
+#section6 .row{
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+#section6 h1{
+	color: #ffffff;
+	margin-bottom: 5%;
+}
+#section6 .first-col-prefooter{
+	color: #8f8e91;
+    font-size: 1.7em;
+	text-decoration: none;
+}
+.non-decoration{
+	color: #8f8e91;
+    font-size: 1.7em;
+	text-decoration: none;
+}
+#section6 .quick a{
+	color: #8f8e91;
+    font-size: 1.7em;
+	text-decoration: none;
+}
+#section6 .section6-h1-third{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+#section6 .quick-links{
+	margin-left: 20%;
+}
+#section6 input{
+	padding: 2% 0% 2% 2%;
+	margin-bottom: 1%;
+	width: 75%;
+	font-size: 1.6em;
+	background-color: #0b0a0a;
+	border: 1px solid #838484;
+}
+#section6 button{
+	background-color: #1dde85;
+	color: #f5faee;
+	border: none;
+    font-size: 1.7em;
+  	letter-spacing: 1px;
+	width: 35%;
+	padding: 2% 5% 2% 5%;
+	margin: 0% 0% 0% 4%;
+}
+/*FOOTER*/
+footer{
+	background-color: #000000;
+}
+footer .container h1{
+	color: #7b7a7d;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 1.6em;
+}
 /*MEDIA*/
 /*NAVBAR*/
 @media screen and (max-width: 991px){
 	nav .right-charts a{
 		margin-left: 1em;
+	}
+	#section6 .quick-links{
+		margin-left: 0%;
+	}
+	#section6 h1{
+		margin-top: 5%;
+		margin-bottom: 1%;
 	}
 }
 @media screen and (max-width: 767px){
