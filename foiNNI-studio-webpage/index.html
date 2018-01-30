@@ -16,17 +16,19 @@
 	</head>
 	<body>
 	    <header class="effect-2">
-	        <nav>
+	       <div id="home" class="parallax-window parallax-header" data-parallax="scroll" data-image-src="img/header/website-design-background-1.jpg">
+             <nav id="menu">
 	            <div class="container">
 	                <span class="left-chart">
 	                    <a href="#"><img src="img/header/logo.png"></a>
 	                </span>
 	                <span class="right-charts">
-	                    <a class="hover" href="#"><span>Home</span></a>
-	                    <a class="hover" href="#"><span>Service</span></a>
-	                    <a class="hover" href="#"><span>Pricing</span></a>
-	                    <a class="hover" href="#"><span>Portfolio</span></a>
-	                    <a class="hover" href="#"><span>Contact us</span></a>
+	                    <a class="hover" href="#">Home</a>
+	                    <a class="hover" href="#section1">Service</a>
+	                    <a class="hover" href="#section2">Team</a>
+	                    <a class="hover" href="#section4">Pricing</a>
+	                    <a class="hover" href="#ex3">Portfolio</a>
+	                    <a class="hover" href="#section5">Contact us</a>
 	                </span>
 	            </div>
 	        </nav>
@@ -34,6 +36,7 @@
 	            <h1>We Love <span class="foinni-green">foinni</span> Polapain</h1>
 	            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis en.</p>
 	        </div>
+			</div>
 	    </header>
 	    
 	    <section id="section1">
@@ -136,7 +139,7 @@
 
 		<section id="section3">
 			<div class="container">
-				<h1>Our Latest Works</h1>
+				<h1 id="ex3">Our Latest Works</h1>
 				<div class="container">
 					<div class="category-item" id="all">ALL</div>
 					<div class="category-item" id="photography">Photography</div>
@@ -296,17 +299,20 @@
 		</section>
 		
 		<section id="section5">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="img/section5/section5-background.jpg">
-            	<div class="container center">
-            		<h1>Say hi</h1>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/header/happy-squarespace-developer-1.jpg">
+            	<div id="none" class="container center">
+            		<h1 id="h1">Say hi</h1>
 					<form>
 						<div class="row">
-							<input onclick="opacity()" id="name" class="name" placeholder="Name">
-							<input id="email" class="email" placeholder="Email">
+							<input onclick="opacity()" id="name" class="name" placeholder="Name" required>
+							<input id="email" class="email" placeholder="Email" required>
 						</div>
-						<textarea id="text" rows="5" cols="5" placeholder="Your message"></textarea>
+						<textarea id="text" rows="5" cols="5" placeholder="Your message" required></textarea>
 					</form>
-           			<button>Send message</button>
+           			<button onclick="success()">Send message</button>
+            	</div>
+            	<div id="success">
+            		<h1><img src="img/section6/success.png">Your message sent.</h1>
             	</div>
 	    	</div>
 		</section>
@@ -322,11 +328,11 @@
 						<h1 class="quick-links">Quick Links</h1>
 						<div class="row">
 							<div class="col-5 quick">
-								<a href="#"><p><img src="img/section6/small-icon.png">Home</p></a>
-								<a href="#"><p><img src="img/section6/small-icon.png">Services</p></a>
-								<a href="#"><p><img src="img/section6/small-icon.png">Portfolio</p></a>
-								<a href="#"><p><img src="img/section6/small-icon.png">Pricing</p></a>
-								<a href="#"><p><img src="img/section6/small-icon.png">Contact Us</p></a>
+								<a href="#home"><p><img src="img/section6/small-icon.png">Home</p></a>
+								<a href="#section1"><p><img src="img/section6/small-icon.png">Services</p></a>
+								<a href="#ex3"><p><img src="img/section6/small-icon.png">Portfolio</p></a>
+								<a href="#section4"><p><img src="img/section6/small-icon.png">Pricing</p></a>
+								<a href="#section5"><p><img src="img/section6/small-icon.png">Contact Us</p></a>
 							</div>
 							<div class="col-5 quick">
 								<a href="#"><p><img src="img/section6/small-icon.png">Development</p></a>
@@ -343,9 +349,10 @@
 						<a href="#"><img src="img/section6/google-icon.png"></a>
 						<a href="#"><img src="img/section6/linkedin-icon.png"></a>
 						<h1 class="section6-h1-third">Subscribe Our Newsletter</h1>
-						<input placeholder="Your Email...">
-           				<div class="row">
-           					<button>Subscribe</button>
+						<p id="succ"><img id="succ-image" src="img/section6/success.png">Your subscribe message will be send to your email.</p>
+						<input id="subscribe1" placeholder="Your Email...">
+           				<div id="subscribe2" class="row">
+           					<button id="subscribe3" onclick="subscribe()">Subscribe</button>
            				</div>
 					</div>
 				</div>
@@ -358,6 +365,22 @@
 			</div>
 		</footer>
 <!--SCRIPTS-->
+<!--SCRIPT-FOR-SMOOTHIE-SCROLER-AFTER-LINKS-->
+<script>
+	$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 2000);
+	});
+});
+
+</script>
 <!--SCRIPTS-FOR-SECTION1-&-SECTION4-->
 <script>
 	window.onload = initDivMouseOver;
@@ -636,6 +659,37 @@
 	
 	function opacity(){
 		name.style.opacity = 0.2;
+	}
+</script>
+<!--SCRIPTS-SUCCESS-->
+<script>
+	function success(){
+		var divToNone = document.getElementById("none");
+		var divToBlock = document.getElementById("success");
+		var h1 = document.getElementById("h1");
+		divToNone.style.display = "none";
+		h1.style.marginTop = "none";
+		divToBlock.style.display = "block";
+	function reload(){
+		location.reload();
+	}
+		setInterval(reload, 2000);
+	}
+</script>
+<script>
+	function subscribe(){
+		var subsc1 = document.getElementById("subscribe1");
+		var subsc2 = document.getElementById("subscribe2");
+		var subsc3 = document.getElementById("subscribe3");
+		var toBlock = document.getElementById("succ");
+		subsc1.style.display = "none";
+		subsc2.style.display = "none";
+		subsc3.style.marginTop = "none";
+		toBlock.style.display = "block";
+	function reload(){
+		location.reload();
+	}
+		setInterval(reload, 2000);
 	}
 </script>
 	</body>

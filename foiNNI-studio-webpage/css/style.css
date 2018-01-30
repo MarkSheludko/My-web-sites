@@ -19,13 +19,13 @@ header{
     position: relative;
     width: 100%;
     height: auto;
-    background-color: #1a1a1a;
+/*    background-color: #1a1a1a;*/
 }
 /*NAV*/
 nav{
     padding-top: 1%;
     padding-bottom: 1%;
-    border-bottom: 3px solid #555456;
+    border-bottom: 2px solid #444a4a;
     text-transform: uppercase;
 }
 .left-chart{
@@ -276,6 +276,11 @@ header .second-container p{
 	padding: 1% 0% 1% 0%;
 	margin: 0% 0% 5% 0%;
 }
+#section3 button:hover{
+	animation-delay: 2s;
+	background-color: #18bd71;
+	box-shadow: 5px;
+}
 .toSmall{
     height: 0px;
     overflow:hidden;
@@ -356,8 +361,14 @@ header .second-container p{
     background: transparent;
     background-repeat: no-repeat;
 }
+#section5 .container{
+	display: block;
+}
+#success{
+	display: none;
+}
 #section5 h1{
-	color: #454546;
+	color: white;
 	font-size: 2.7em;
 	text-align: center;
 	text-transform: uppercase;
@@ -372,20 +383,20 @@ header .second-container p{
 	padding-bottom: 1%;
 	margin-left: 17.5%;
 	margin-right: 5%;
-	border: 1px solid #cfcfcf;
+	border: 1px solid #c5c5c5;
 	width: 30%;
 	color: white;
-	background-color: #cfcdca;
+	background-color: #3c3f48;
 	opacity: 0.8;
 }
 #section5 .email{
 	padding-left: 1%;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	border: 1px solid #cfcfcf;
+	border: 1px solid #c5c5c5;
 	width: 30%;
 	color: white;
-	background-color: #cfcdca;
+	background-color: #3c3f48;
 	opacity: 0.8;
 }
 #section5 form textarea{
@@ -393,10 +404,10 @@ header .second-container p{
 	padding-top: 1%;
 	padding-bottom: 1%;
 	margin-top: 3%;
-	border: 1px solid #cfcfcf;
+	border: 1px solid #c5c5c5;
 	width: 66.9%;
 	color: white;
-	background-color: #cfcdca;
+	background-color: #3c3f48;
 	opacity: 0.8;
 }
 #section5 button{
@@ -409,6 +420,11 @@ header .second-container p{
 	padding: 1% 0% 1% 0%;
 	margin: 3% 0% 5% 0%;
 }
+#section5 button:hover{
+	animation-delay: 2s;
+	background-color: #18bd71;
+	box-shadow: 5px;
+}
 /*SECTION6*/
 #section6{
 	background-color: #0b0a0a;
@@ -420,6 +436,14 @@ header .second-container p{
 #section6 h1{
 	color: #ffffff;
 	margin-bottom: 5%;
+}
+#succ-image{
+	width: 25%;
+}
+#succ{
+	display: none;
+	color: white;
+	font-size: 1.1em;
 }
 #section6 .first-col-prefooter{
 	color: #8f8e91;
@@ -460,6 +484,11 @@ header .second-container p{
 	width: 35%;
 	padding: 2% 5% 2% 5%;
 	margin: 0% 0% 0% 4%;
+}
+#section6 button:hover{
+	animation-delay: 2s;
+	background-color: #18bd71;
+	box-shadow: 5px;
 }
 /*FOOTER*/
 footer{
