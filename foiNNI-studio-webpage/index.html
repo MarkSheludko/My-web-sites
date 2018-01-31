@@ -7,32 +7,34 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/parallax.js"></script>
+        <script src="js/WOW.js"></script>
 	</head>
 	<body>
 	    <header class="effect-2">
 	       <div id="home" class="parallax-window parallax-header" data-parallax="scroll" data-image-src="img/header/website-design-background-1.jpg">
              <nav id="menu">
 	            <div class="container">
-	                <span class="left-chart">
-	                    <a href="#"><img src="img/header/logo.png"></a>
-	                </span>
-	                <span class="right-charts">
-	                    <a class="hover" href="#">Home</a>
-	                    <a class="hover" href="#section1">Service</a>
-	                    <a class="hover" href="#section2">Team</a>
-	                    <a class="hover" href="#section4">Pricing</a>
-	                    <a class="hover" href="#ex3">Portfolio</a>
-	                    <a class="hover" href="#section5">Contact us</a>
-	                </span>
+	                <a href="#"><img src="img/header/logo.png"></a>
+	                <input type="checkbox" name="menu" id="btn-menu" />
+    				<label for="btn-menu"><img src="img/header/menu.png"></label> 
+                    <ul>
+						<li><a class="hover" href="#">Home</a></li>
+						<li><a class="hover" href="#section1">Service</a></li>
+						<li><a class="hover" href="#section2">Team</a></li>
+						<li><a class="hover" href="#section4">Pricing</a></li>
+						<li><a class="hover" href="#ex3">Portfolio</a></li>
+						<li><a class="hover" href="#section5">Contact us</a></li>
+    				</ul>
 	            </div>
 	        </nav>
-	        <div class="container second-container">
+	        <div class="container second-container  wow fadeInDown">
 	            <h1>We Love <span class="foinni-green">foinni</span> Polapain</h1>
 	            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis en.</p>
 	        </div>
@@ -40,7 +42,7 @@
 	    </header>
 	    
 	    <section id="section1">
-	    	<div class="container first-part center">
+	    	<div class="container first-part center wow bounceInUp">
 	    		<h1>Welcome To <span class="foinni-green">Foinni</span></h1>
 	    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
 	    		sed do eiusmod tempor incididung ut labore et dolore magna 
@@ -48,34 +50,34 @@
 	    	</div>
 	    	<div class="container">
 	    		<div class="row">
-	    			<div id="green-div-1" class="col-lg-3 to-green">
+	    			<div id="green-div-1" class="col-lg-3 col-md-3 to-green wow fadeInLeft">
 	    				<img id="img-icon-1" src="img/section1/code-icon.png" onmouseover="this.src='img/section1/code-green-icon.png';" onmouseout="this.src='img/section1/code-icon.png';" />
 	    				<h1>Development</h1>
 	    				<p id="p1">Lorem ipsum dolor sit amet, consectetur adipising elit, sevdent, sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
 	    			</div>
-	    			<div id="green-div-2" class="col-lg-3 to-green">
+	    			<div id="green-div-2" class="col-lg-3 col-md-3 to-green wow bounceInUp">
 	    				<img id="img-icon-2" src="img/section1/computer-icon.png" onmouseover="this.src='img/section1/computer-green-icon.png';" onmouseout="this.src='img/section1/computer-icon.png';" />
 	    				<h1>Responsive</h1>
 	    				<p id="p2">Lorem ipsum dolor sit amet, consectetur adipising elit, sevdent, sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
 	    			</div>
-	    			<div id="green-div-3" class="col-lg-3 to-green">
+	    			<div id="green-div-3" class="col-lg-3 col-md-3 to-green wow fadeInRight">
 	    				<img id="img-icon-3" src="img/section1/wifi-icon.png" onmouseover="this.src='img/section1/wifi-green-icon.png';" onmouseout="this.src='img/section1/wifi-icon.png';" />
 	    				<h1>Development</h1>
 	    				<p id="p3">Lorem ipsum dolor sit amet, consectetur adipising elit, sevdent, sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
 	    			</div>
 	    		</div>
 	    		<div class="row">
-	    			<div id="green-div-4" class="col-lg-3 to-green">
+	    			<div id="green-div-4" class="col-lg-3 col-md-3 to-green wow fadeIn">
 	    				<img id="img-icon-4" src="img/section1/eye-icon.png" onmouseover="this.src='img/section1/eye-green-icon.png';" onmouseout="this.src='img/section1/eye-icon.png';" />
 	    				<h1>Graphic Design</h1>
 	    				<p id="p4">Lorem ipsum dolor sit amet, consectetur adipising elit, sevdent, sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
 	    			</div>
-	    			<div id="green-div-5" class="col-lg-3 to-green">
+	    			<div id="green-div-5" class="col-lg-3 col-md-3 to-green wow fadeIn">
 	    				<img id="img-icon-5" src="img/section1/camera-icon.png" onmouseover="this.src='img/section1/camera-green-icon.png';" onmouseout="this.src='img/section1/camera-icon.png';" />
 	    				<h1>Photography</h1>
 	    				<p id="p5">Lorem ipsum dolor sit amet, consectetur adipising elit, sevdent, sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
 	    			</div>
-	    			<div id="green-div-6" class="col-lg-3 to-green">
+	    			<div id="green-div-6" class="col-lg-3 col-md-3 to-green wow fadeIn">
 	    				<img id="img-icon-6" src="img/section1/brightness-icon.png" onmouseover="this.src='img/section1/brightness-green-icon.png';" onmouseout="this.src='img/section1/brightness-icon.png';" />
 	    				<h1>Photo Editing</h1>
 	    				<p id="p6">Lorem ipsum dolor sit amet, consectetur adipising elit, sevdent, sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
@@ -86,10 +88,10 @@
 	    </section>
 	    
 	    <section id="section2">
-			<div class="container">
+			<div class="container wow fadeIn">
 		  	  <h1>Meet Us</h1>
 			  <div class="row">
-				<div class="col-lg-3 textWithBlurredBg">
+				<div class="col-lg-3 col-md textWithBlurredBg wow fadeInRight">
 					<img src="img/section2/photo-1.png">
 					<h2>Liker Shohel</h2>
   					<h3>Photographer</h3>
@@ -100,7 +102,7 @@
 						<a class="icon3" href="#"><i class=" zmdi zmdi-twitter"></i></a></div>
   					</div>
   				</div>
-				<div class="col-lg-3 textWithBlurredBg">
+				<div class="col-lg-3 col-md textWithBlurredBg wow fadeInRight">
 					<img src="img/section2/photo-1.png">
 					<h2>Liker Shohel</h2>
   					<h3>Photographer</h3>
@@ -111,7 +113,7 @@
 						<a class="icon3" href="#"><i class=" zmdi zmdi-twitter"></i></a></div>
   					</div>
 				</div>
-				<div class="col-lg-3 textWithBlurredBg">
+				<div class="col-lg-3 col-md textWithBlurredBg wow fadeInRight">
 					<img src="img/section2/photo-1.png">
 					<h2>Liker Shohel</h2>
   					<h3>Photographer</h3>
@@ -122,7 +124,7 @@
 						<a class="icon3" href="#"><i class=" zmdi zmdi-twitter"></i></a></div>
   					</div>
 				</div>
-				<div class="col-lg-3 textWithBlurredBg">
+				<div class="col-lg-3 col-md textWithBlurredBg wow fadeInRight">
 					<img src="img/section2/photo-1.png">
 					<h2>Liker Shohel</h2>
   					<h3>Photographer</h3>
@@ -138,7 +140,7 @@
       </section>
 
 		<section id="section3">
-			<div class="container">
+			<div class="container wow fadeIn">
 				<h1 id="ex3">Our Latest Works</h1>
 				<div class="container">
 					<div class="category-item" id="all">ALL</div>
@@ -147,42 +149,42 @@
 					<div class="category-item" id="digital">Digital</div>
   				</div>
 			  	<div class="main-portfolio portfolio container">
-				<div class="portfolio-item photography">
+				<div class="portfolio-item photography wow fadeIn">
 				  <a href="https://images.unsplash.com/photo-1506508839781-65d2a514b73a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1506508839781-65d2a514b73a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
 				</div>
-				<div class="portfolio-item digital">
+				<div class="portfolio-item digital wow fadeIn">
 				  <a href="https://images.unsplash.com/photo-1474314243412-cd4a79f02c6a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1474314243412-cd4a79f02c6a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
 				</div>
-				<div class="portfolio-item photography">
+				<div class="portfolio-item photography wow fadeIn">
 				  <a href="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
 				</div>
-				<div class="portfolio-item digital">
+				<div class="portfolio-item digital wow fadeIn">
 				  <a href="https://images.unsplash.com/photo-1501820434261-5bb046afcf6b?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1501820434261-5bb046afcf6b?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
 				</div>
-				<div class="portfolio-item digital">
+				<div class="portfolio-item digital wow fadeIn">
 				  <a href="https://images.unsplash.com/photo-1474314243412-cd4a79f02c6a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1474314243412-cd4a79f02c6a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
 				</div>
-				<div class="portfolio-item print">
+				<div class="portfolio-item print wow fadeIn">
 				  <a href="https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
 				</div>
-				<div class="portfolio-item print">
+				<div class="portfolio-item print wow fadeIn">
 				  <a href="https://images.unsplash.com/photo-1490013616775-3ca8865fb129?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1490013616775-3ca8865fb129?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
 				</div>
-				<div class="portfolio-item photography">
+				<div id="here" class="portfolio-item photography wow bounceInUp">
 				  <a href="https://images.unsplash.com/photo-1506508839781-65d2a514b73a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" data-lightbox="gallery">
 					<img src="https://images.unsplash.com/photo-1506508839781-65d2a514b73a?dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="portfolio">
 				  </a>
@@ -231,15 +233,17 @@
 				</div>
 				  </div>
 			  </div>
-  				<button id="btt-for-jquery" class="button-see-more">See More</button>
+<!--  				<button id="btt-for-jquery" class="button-see-more">See More</button>-->
+<!--					<a id="btt-for-jquery" href="#here" class="button">See more</a>-->
+					<button id="btt-for-jquery" class="button wow fadeIn">See more</button>
 			</div>
 		</section>
 		
 		<section id="section4">
-			<div class="container">
+			<div class="container wow fadeIn">
 				<h1 class="top-h1">Our Pricing Plans</h1>
 				<div class="row center">
-					<div id="section4-main-div" class="col-lg-3">
+					<div id="section4-main-div" class="col-lg-3 col-md-6 wow fadeInLeft">
 						<p id="section4-p-main">Basic</p>
 						
 						<div id="section4-div">
@@ -253,7 +257,7 @@
 						</div>
 					</div>
 					
-					<div id="section4-main-div-2" class="col-lg-3">
+					<div id="section4-main-div-2" class="col-lg-3 col-md-6 wow fadeInLeft">
 						<p id="section4-p-main-2">Standart</p>
 						
 						<div id="section4-div-2">
@@ -267,7 +271,7 @@
 						</div>
 					</div>
 					
-					<div id="section4-main-div-3" class="col-lg-3">
+					<div id="section4-main-div-3" class="col-lg-3 col-md-6 wow fadeInLeft">
 						<p id="section4-p-main-3">Business</p>
 						
 						<div id="section4-div-3">
@@ -281,7 +285,7 @@
 						</div>
 					</div>
 					
-					<div id="section4-main-div-4" class="col-lg-3">
+					<div id="section4-main-div-4" class="col-lg-3 col-md-6 wow fadeInLeft">
 						<p id="section4-p-main-4">Premium</p>
 						
 						<div id="section4-div-4">
@@ -301,15 +305,15 @@
 		<section id="section5">
 			<div class="parallax-window" data-parallax="scroll" data-image-src="img/header/happy-squarespace-developer-1.jpg">
             	<div id="none" class="container center">
-            		<h1 id="h1">Say hi</h1>
+            		<h1 id="h1" class="wow fadeIn">Say hi</h1>
 					<form>
 						<div class="row">
-							<input onclick="opacity()" id="name" class="name" placeholder="Name" required>
-							<input id="email" class="email" placeholder="Email" required>
+							<input onclick="opacity()" id="name" class="name wow fadeInLeft" placeholder="Name" required>
+							<input id="email" class="email wow bounceInRight" placeholder="Email" required>
 						</div>
-						<textarea id="text" rows="5" cols="5" placeholder="Your message" required></textarea>
+						<textarea id="text" class="wow fadeIn" rows="5" cols="5" placeholder="Your message" required></textarea>
 					</form>
-           			<button onclick="success()">Send message</button>
+           			<button class="button2 wow fadeIn" onclick="success()">Send message</button>
             	</div>
             	<div id="success">
             		<h1><img src="img/section6/success.png">Your message sent.</h1>
@@ -320,11 +324,11 @@
 		<section id="section6">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 first-col-prefooter">
+					<div class="col-lg-4 first-col-prefooter wow fadeInLeft">
 						<h1>About us</h1>
 						<p>Lorem ipsum dolor sit amet, consectetitecto beatae vitae dicta sunt explicabo. Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempuaerat voluptatem.</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 wow fadeIn">
 						<h1 class="quick-links">Quick Links</h1>
 						<div class="row">
 							<div class="col-5 quick">
@@ -342,7 +346,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 wow fadeInRight">
 						<h1>Find Us On</h1>
 						<a href="#"><img src="img/section6/facebook-icon.png"></a>
 						<a href="#"><img src="img/section6/twitter-icon.png"></a>
@@ -352,7 +356,7 @@
 						<p id="succ"><img id="succ-image" src="img/section6/success.png">Your subscribe message will be send to your email.</p>
 						<input id="subscribe1" placeholder="Your Email...">
            				<div id="subscribe2" class="row">
-           					<button id="subscribe3" onclick="subscribe()">Subscribe</button>
+           					<button id="subscribe3" onclick="subscribe()" class="button3 wow bounceInLeft">Subscribe</button>
            				</div>
 					</div>
 				</div>
@@ -361,11 +365,14 @@
 		
 		<footer>
 			<div class="container center">
-				<h1>A Design By Mark SHeludko 2018</h1>
+				<h1>A Design By Mark Sheludko 2018</h1>
 			</div>
 		</footer>
 <!--SCRIPTS-->
 <!--SCRIPT-FOR-SMOOTHIE-SCROLER-AFTER-LINKS-->
+<script>
+   new WOW().init();
+</script>
 <script>
 	$(document).ready(function(){
     $("#menu").on("click","a", function (event) {
@@ -506,12 +513,16 @@
 			
 			section4div.style.border = "1px solid #1dde85";
 			mainP.style.color = "#1dde85";
+			mainP.style.transition = "1s";
 			
 			h1.style.border = "none";
 			h1.style.color = "#fffcf4";
+			h1.style.transition = "1s";
 			h1.style.backgroundColor = "#1dde85";
+			h1.style.transition = "1s";
 			
 			button.style.backgroundColor = "#1dde85";
+			button.style.transition = "1s";
 			button.style.color = "#fffcf4";
 			button.style.border = "none";
 			button.style.borderRadius = "5px";
@@ -536,13 +547,17 @@
 		    this.mouseIsOver = true;
 			
 			section4div2.style.border = "1px solid #1dde85";
+			section4div2.style.transition = "1s";
 			mainP2.style.color = "#1dde85";
+			mainP2.style.transition = "1s";
 			
 			h12.style.border = "none";
+			h12.style.transition = "1s";
 			h12.style.color = "#fffcf4";
 			h12.style.backgroundColor = "#1dde85";
 			
 			button2.style.backgroundColor = "#1dde85";
+			button2.style.transition = "1s";
 			button2.style.color = "#fffcf4";
 			button2.style.border = "none";
 			button2.style.borderRadius = "5px";
@@ -567,13 +582,17 @@
 		    this.mouseIsOver = true;
 			
 			section4div3.style.border = "1px solid #1dde85";
+			section4div3.style.transition = "1s";
 			mainP3.style.color = "#1dde85";
+			mainP3.style.transition = "1s";
 			
 			h13.style.border = "none";
+			h13.style.transition = "1s";
 			h13.style.color = "#fffcf4";
 			h13.style.backgroundColor = "#1dde85";
 			
 			button3.style.backgroundColor = "#1dde85";
+			button3.style.transition = "1s";
 			button3.style.color = "#fffcf4";
 			button3.style.border = "none";
 			button3.style.borderRadius = "5px";
@@ -598,13 +617,17 @@
 		    this.mouseIsOver = true;
 			
 			section4div4.style.border = "1px solid #1dde85";
+			section4div4.style.transition = "1s";
 			mainP4.style.color = "#1dde85";
+			mainP4.style.etransition = "1s";
 			
 			h14.style.border = "none";
+			h14.style.transition = "1s";
 			h14.style.color = "#fffcf4";
 			h14.style.backgroundColor = "#1dde85";
 			
 			button4.style.backgroundColor = "#1dde85";
+			button4.style.transition = "1s";
 			button4.style.color = "#fffcf4";
 			button4.style.border = "none";
 			button4.style.borderRadius = "5px";
