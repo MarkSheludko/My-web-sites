@@ -350,6 +350,7 @@ header .second-container p{
 /*SECTION4*/
 #section4{
 	background-color: #fffcf4;
+	position: relative;
 }
 #section4 .row{
 	margin-bottom: 5%;
